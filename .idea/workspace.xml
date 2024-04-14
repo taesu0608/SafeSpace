@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="" />
+    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="feat:first demo Spring boot">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloLombok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/HelloLombok.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +45,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "taesu0608"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/taesu0608/TestServer.git",
+    "accountId": "75a686bc-483b-4564-870d-22e3acdb4ca3"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -128,6 +142,15 @@
       <workItem from="1713071996342" duration="7974000" />
       <workItem from="1713083108392" duration="586000" />
     </task>
+    <task id="LOCAL-00001" summary="feat:first demo Spring boot">
+      <option name="closed" value="true" />
+      <created>1713084908693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713084908693</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +169,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat:first demo Spring boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:first demo Spring boot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
