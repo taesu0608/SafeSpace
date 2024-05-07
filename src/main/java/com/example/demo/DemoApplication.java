@@ -16,7 +16,7 @@ public class DemoApplication {
 	//localhost:8080를 호출하면 helloWorld를 찍어주기 위한 함수
 	@RequestMapping("/")
 	public String helloWorld(){
-		return "helloW나야d";
+		return "helloW나야d12345";
 	}
 
 }
