@@ -23,9 +23,4 @@ public class Test {
     @Column(length = 100)
     private String testContents;
 
-    @Builder
-    public Test(Integer testId, String testContents) {
-        this.testId = testId;
-        this.testContents = testContents;
-    }
 }

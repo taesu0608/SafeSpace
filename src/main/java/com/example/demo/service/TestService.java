@@ -6,15 +6,15 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+
 @Service
 @Component
 @RequiredArgsConstructor
 public class TestService {
     private final TestRepository testRepository;
-
-    public TestDto testServiceMethod(String str) {
-        TestDto testDto = new TestDto(str);
-
-        return testDto;
-    }
+    
+    TestDto testdto = TestDto.builder()
+            .userId("1")
+            .testStr("2")
+            .build();
 }
