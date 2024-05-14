@@ -1,7 +1,5 @@
 package com.example.demo.controller;
 
-
-import com.example.demo.dto.TestDto;
 import com.example.demo.service.TestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

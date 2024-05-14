@@ -5,7 +5,6 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
@@ -15,7 +14,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing
 @Table(name = "test")
 @EntityListeners(AuditingEntityListener.class)
-public class Test {
+public class TestE {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
@@ -25,7 +24,7 @@ public class Test {
     private String testContents;
 
     @Builder
-    public Test(String testContents) {
+    public TestE(String testContents) {
         this.testContents = testContents;
     }
 }
