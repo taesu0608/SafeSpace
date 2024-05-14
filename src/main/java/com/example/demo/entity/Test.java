@@ -13,14 +13,19 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
+@Table(name = "test")
 @EntityListeners(AuditingEntityListener.class)
 public class Test {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    private Integer testId;
+    private Long testId;
 
     @Column(length = 100)
     private String testContents;
 
+    @Builder
+    public Test(String testContents) {
+        this.testContents = testContents;
+    }
 }

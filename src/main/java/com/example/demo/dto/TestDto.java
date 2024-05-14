@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+import com.example.demo.repository.TestRepository;
 import lombok.Builder;
 import lombok.Data;
 import org.antlr.v4.runtime.misc.NotNull;
@@ -12,10 +13,4 @@ public class TestDto {
     private String userId;
     @NotNull
     private String testStr;
-
-    @Builder
-    public TestDto(String userId,String testStr) {
-        this.userId = userId;
-        this.testStr = testStr;
-    }
 }

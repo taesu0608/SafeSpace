@@ -17,8 +17,8 @@ public class TestController {
 
     @GetMapping("/test/{str}")
     public String test(@PathVariable String str) {
-        TestDto res = testService.testServiceMethod(str);
+        testService.save();
 
-        return "hello "+res.getTestStr() ;
+        return "hello ";
     }
 }
