@@ -1,29 +1,29 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+import org.apache.ibatis.annotations.Many;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@EnableJpaAuditing
-@Table(name = "registerIp")
-public class RegisterIpE {
+public class RegisterIp {
     @Id
-    @Column(length = 255)
+    @Column(length = 150)
     private String ip;
 
     @Column(length = 255)
     private String uid;
 
     @Builder
-    public RegisterIpE(String ip, String uid){
+    public RegisterIp(String ip, String uid, WorkplaceInformation workplaceInformation){
         this.ip = ip;
         this.uid = uid;
+        this.workplaceInformation = workplaceInformation;
     }
+
+    @ManyToOne
+    private WorkplaceInformation workplaceInformation;
 }

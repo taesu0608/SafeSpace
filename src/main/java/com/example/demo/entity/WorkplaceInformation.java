@@ -1,23 +1,21 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
-@Table(name = "workSpaceInformation")
-public class WorkSpaceInformationE {
+public class WorkplaceInformation {
     @Id
-    @Column(length = 255)
+    @Column(length = 150)
     private String uid;
 
     @Column(length = 255)
@@ -44,8 +42,8 @@ public class WorkSpaceInformationE {
     private LocalDate joinDate;
 
     @Builder
-    public WorkSpaceInformationE(String uid, String workspaceIp, String dancPin, String workspaceName, String ownerName,
-                                 String address, String businessType, String workspacePhone,LocalDate joinDate){
+    public WorkplaceInformation(String uid, String workspaceIp, String dancPin, String workspaceName, String ownerName,
+                                String address, String businessType, String workspacePhone, LocalDate joinDate){
         this.uid = uid;
         this.workspaceIp = workspaceIp;
         this.dancPin = dancPin;
@@ -55,5 +53,14 @@ public class WorkSpaceInformationE {
         this.businessType = businessType;
         this.workspacePhone = workspacePhone;
         this.joinDate = joinDate;
+        this.registerIps = new ArrayList<>();
+        this.subscribeInformations = new ArrayList<>();
+
     }
+
+    @OneToMany(mappedBy = "workplaceInformation", cascade = CascadeType.REMOVE)
+    private List<RegisterIp> registerIps;
+
+    @OneToMany(mappedBy = "workplaceInformation", cascade = CascadeType.REMOVE)
+    private List<SubscribeInformation> subscribeInformations;
 }

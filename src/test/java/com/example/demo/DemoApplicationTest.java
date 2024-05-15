@@ -23,6 +23,7 @@ class DemoApplicationTest {
         TestE testEntity = TestE.builder()
                 .testContents("4")
                 .build();
+
         
         //Jpa save()실행
         testRepository.save(testEntity);

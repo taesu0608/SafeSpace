@@ -1,10 +1,9 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+import org.apache.ibatis.annotations.Many;
+import org.hibernate.jdbc.Work;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.time.LocalDate;
@@ -14,10 +13,10 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
-@Table(name = "subscribeInformation")
-public class SubscribeInformationE {
+public class SubscribeInformation {
     @Id
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(length = 255)
     private String uid;
@@ -40,9 +39,10 @@ public class SubscribeInformationE {
     private LocalDate startDate;
 
     @Builder
-    public SubscribeInformationE(String uid, String name, String providerId,
-                                 String productId, LocalDate endDate, LocalDate nextPaymentDate,
-                                 LocalDate paymentDate, LocalDate startDate){
+    public SubscribeInformation(String uid, String name, String providerId,
+                                String productId, LocalDate endDate, LocalDate nextPaymentDate,
+                                LocalDate paymentDate, LocalDate startDate,
+                                WorkplaceInformation workplaceInformation){
         this.uid = uid;
         this.name = name;
         this.providerId = providerId;
@@ -51,5 +51,10 @@ public class SubscribeInformationE {
         this.nextPaymentDate = nextPaymentDate;
         this.paymentDate = paymentDate;
         this.startDate = startDate;
+        this.workplaceInformation = workplaceInformation;
     }
+
+    @ManyToOne
+
+    private WorkplaceInformation workplaceInformation;
 }
