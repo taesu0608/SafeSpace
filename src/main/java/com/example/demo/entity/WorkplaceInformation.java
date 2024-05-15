@@ -13,6 +13,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
+@Table(name = "WorkplaceInformation")
 public class WorkplaceInformation {
     @Id
     @Column(length = 150)
