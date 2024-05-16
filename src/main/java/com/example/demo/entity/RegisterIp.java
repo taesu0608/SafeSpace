@@ -8,14 +8,18 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @Entity
 @Getter
 @Setter
+@Table(name = "RegisterIp")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class RegisterIp {
     @Id
     @Column(length = 150)
     private String ip;
 
-    @Column(length = 255)
+    @Column(length = 150)
     private String uid;
+
+    @ManyToOne
+    private WorkplaceInformation workplaceInformation;
 
     @Builder
     public RegisterIp(String ip, String uid, WorkplaceInformation workplaceInformation){
@@ -23,7 +27,4 @@ public class RegisterIp {
         this.uid = uid;
         this.workplaceInformation = workplaceInformation;
     }
-
-    @ManyToOne
-    private WorkplaceInformation workplaceInformation;
 }

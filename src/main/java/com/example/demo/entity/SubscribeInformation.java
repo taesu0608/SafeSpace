@@ -13,9 +13,11 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
+@Table(name = "SubscribeInformation")
 public class SubscribeInformation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(length = 150)
     private Integer id;
 
     @Column(length = 255)
