@@ -28,6 +28,9 @@ public class Provider {
     @OneToMany(mappedBy = "provider", cascade = CascadeType.ALL)
     private List<Product> productList;
 
+    @OneToMany(mappedBy = "provider", cascade = CascadeType.ALL)
+    private List<SubscribeInformation> subscribeInformation;
+
     @Builder
     public Provider(String provider_id, String name, String img_path) {
         this.provider_id = provider_id;

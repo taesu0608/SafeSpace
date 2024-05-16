@@ -43,6 +43,9 @@ public class Product {
     @ManyToOne
     private Provider provider;
 
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private List<SubscribeInformation> subscribeInformation;
+
     @Builder
     public Product(String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price) {
         this.product_name = product_name;

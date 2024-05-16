@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="feat: Entity Relation, Repository&#10;1. Entity 관계 형성 및 DB Table 생성 확인&#10;2. Repository 구현">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RegisterIpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SubscribeInformationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/WorkplaceInformationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/SubscribeInformationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/SubscribeInformationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/SubscribeInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/SubscribeInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/taesu0608" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -192,6 +193,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DemoApplicationTest.testService" />
+        <item itemvalue="Gradle.DemoApplicationTest.test" />
         <item itemvalue="Gradle.DemoApplicationTest.test" />
         <item itemvalue="Gradle.DemoApplicationTest.testService" />
       </list>

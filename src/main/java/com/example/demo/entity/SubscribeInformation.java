@@ -57,6 +57,11 @@ public class SubscribeInformation {
     }
 
     @ManyToOne
-
     private WorkplaceInformation workplaceInformation;
+
+    @ManyToOne
+    private Provider provider;
+
+    @ManyToOne
+    private Product product;
 }
