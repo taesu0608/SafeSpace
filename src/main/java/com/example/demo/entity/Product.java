@@ -20,6 +20,9 @@ public class Product {
     @Column(nullable = false, length = 150)
     private Integer product_id;
 
+    @ManyToOne
+    private Provider provider;
+
     @Column(length = 100)
     private String product_name;
 
@@ -40,9 +43,6 @@ public class Product {
 
     @Column
     private Integer price;
-
-    @ManyToOne
-    private Provider provider;
 
 
     @Builder
