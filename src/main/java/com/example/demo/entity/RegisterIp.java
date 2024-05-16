@@ -15,8 +15,11 @@ public class RegisterIp {
     @Column(length = 150)
     private String ip;
 
-    @Column(length = 255)
+    @Column(length = 150)
     private String uid;
+
+    @ManyToOne
+    private WorkplaceInformation workplaceInformation;
 
     @Builder
     public RegisterIp(String ip, String uid, WorkplaceInformation workplaceInformation){
@@ -24,7 +27,4 @@ public class RegisterIp {
         this.uid = uid;
         this.workplaceInformation = workplaceInformation;
     }
-
-    @ManyToOne
-    private WorkplaceInformation workplaceInformation;
 }

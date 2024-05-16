@@ -16,34 +16,32 @@ import java.util.List;
 @Table(name = "product")
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, length = 150)
-    private Integer product_id;
-
-    @ManyToOne
-    private Provider provider;
+    private String product_id;
 
     @Column(length = 100)
     private String product_name;
 
-    @Column(length = 250)
+    @Column(length = 255)
     private String img_path;
 
     @Column(length = 100)
     private String category;
 
-    @Column(length = 250)
+    @Column(length = 255)
     private String description;
 
-    @Column
+    @Column(length = 255)
     private Integer capacity;
 
-    @Column
+    @Column(length = 100)
     private Integer month;
 
-    @Column
+    @Column(length = 100)
     private Integer price;
 
+    @ManyToOne
+    private Provider provider;
 
     @Builder
     public Product(String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price) {
