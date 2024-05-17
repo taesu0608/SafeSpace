@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.dto.RegisterIpDTO;
 import jakarta.persistence.*;
 import lombok.*;
 import org.apache.ibatis.annotations.Many;
@@ -26,5 +27,12 @@ public class RegisterIp {
         this.ip = ip;
         this.uid = uid;
         this.workplaceInformation = workplaceInformation;
+    }
+
+    public static RegisterIp toEntity(RegisterIpDTO dto){
+        return RegisterIp.builder()
+                .ip(dto.getIp())
+                .uid(dto.getUid())
+                .build();
     }
 }
