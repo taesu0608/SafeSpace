@@ -24,4 +24,8 @@ public class RegisterIpService {
         else
             return null;
     }
+
+    public void saveRegisterIp(RegisterIp registerIp) {
+        registerIpRepository.save(registerIp);
+    }
 }

@@ -15,14 +15,14 @@ import java.util.Date;
 public class WorkplaceInformationController {
     private final WorkplaceInformationService workplaceInformationService;
 
-    @GetMapping("/user/")
-    public WorkplaceInformationDTO getWorkplaceInformation(@RequestParam("uid") String uid) {
+    @GetMapping("/user/") //사용자 조회
+    public WorkplaceInformationDTO getdWorkplaceInformationByUid(@RequestParam("uid") String uid) {
         return new WorkplaceInformationDTO().toDTO(
                 workplaceInformationService.getWorkplaceInformation(uid)
         );
     }
 
-    @GetMapping("/join/")
+    @GetMapping("/join/") //회원가입
     public Boolean joinWorkplace(@RequestBody WorkplaceInformationDTO workplaceInformationDTO) {
         String uid = workplaceInformationDTO.getUid();
         if(workplaceInformationService.getWorkplaceInformation(uid) == null) return false;
