@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="feat: Entity 연결&#10;&#10;Entity 관계 연결">
+    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="feat: Retrofit2 의존성 추가">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_converter_jackson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_retrofit2_retrofit_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/ListResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/demo.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/TestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +258,7 @@
       <workItem from="1715909056437" duration="1192000" />
       <workItem from="1715948503364" duration="45000" />
       <workItem from="1715997549771" duration="823000" />
-      <workItem from="1716098483050" duration="590000" />
+      <workItem from="1716098483050" duration="4121000" />
     </task>
     <task id="LOCAL-00001" summary="feat:&#10;1. SprintBoot 구조 구현">
       <option name="closed" value="true" />
@@ -288,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715849877492</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: Retrofit2 의존성 추가">
+      <option name="closed" value="true" />
+      <created>1716099092538</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716099092538</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +359,8 @@
     <MESSAGE value="feat:&#10;1. DB, JPA 의존성 추가&#10;2. DB 데이터 값 삽입" />
     <MESSAGE value="feat: Entity Relation, Repository&#10;1. Entity 관계 형성 및 DB Table 생성 확인&#10;2. Repository 구현" />
     <MESSAGE value="feat: Entity 연결&#10;&#10;Entity 관계 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Entity 연결&#10;&#10;Entity 관계 연결" />
+    <MESSAGE value="feat: Retrofit2 의존성 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Retrofit2 의존성 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
