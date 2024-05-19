@@ -47,7 +47,8 @@ public class Product {
     private List<SubscribeInformation> subscribeInformation;
 
     @Builder
-    public Product(String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price) {
+    public Product(String product_id,String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price) {
+        this.product_id = product_id;
         this.product_name = product_name;
         this.img_path = img_path;
         this.category = category;
