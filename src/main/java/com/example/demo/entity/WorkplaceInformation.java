@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.dto.WorkplaceInformationDTO;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
@@ -64,4 +65,18 @@ public class WorkplaceInformation {
 
     @OneToMany(mappedBy = "workplaceInformation", cascade = CascadeType.REMOVE)
     private List<SubscribeInformation> subscribeInformations;
+
+    public static WorkplaceInformation toEntity(WorkplaceInformationDTO dto){
+        return WorkplaceInformation.builder()
+                .uid(dto.getUid())
+                .workspaceIp(dto.getWorkspaceIp())
+                .dancPin(dto.getDancPin())
+                .workspaceName(dto.getWorkspaceName())
+                .ownerName(dto.getOwnerName())
+                .address(dto.getAddress())
+                .businessType(dto.getBusinessType())
+                .workspacePhone(dto.getWorkspacePhone())
+                .joinDate(dto.getJoinDate())
+                .build();
+    }
 }

@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.dto.SubscribeInformationDTO;
 import jakarta.persistence.*;
 import lombok.*;
 import org.apache.ibatis.annotations.Many;
@@ -26,12 +27,6 @@ public class SubscribeInformation {
     @Column(length = 255)
     private String name;
 
-    @Column(length = 255)
-    private String providerId;
-
-    @Column(length = 255)
-    private String productId;
-
     private LocalDate endDate;
 
     private LocalDate nextPaymentDate;
@@ -41,19 +36,21 @@ public class SubscribeInformation {
     private LocalDate startDate;
 
     @Builder
-    public SubscribeInformation(String uid, String name, String providerId,
-                                String productId, LocalDate endDate, LocalDate nextPaymentDate,
+    public SubscribeInformation(String uid, String name, LocalDate endDate,
+                                LocalDate nextPaymentDate,
                                 LocalDate paymentDate, LocalDate startDate,
-                                WorkplaceInformation workplaceInformation){
+                                WorkplaceInformation workplaceInformation,
+                                Product product,
+                                Provider provider){
         this.uid = uid;
         this.name = name;
-        this.providerId = providerId;
-        this.productId = productId;
         this.endDate = endDate;
         this.nextPaymentDate = nextPaymentDate;
         this.paymentDate = paymentDate;
         this.startDate = startDate;
         this.workplaceInformation = workplaceInformation;
+        this.product = product;
+        this.provider = provider;
     }
 
     @ManyToOne
@@ -64,4 +61,17 @@ public class SubscribeInformation {
 
     @ManyToOne
     private Product product;
+
+    public static SubscribeInformation toEntity(SubscribeInformationDTO dto, Provider provider, Product product){
+        return SubscribeInformation.builder()
+                .uid(dto.getUid())
+                .name(dto.getName())
+                .endDate(dto.getEndDate())
+                .nextPaymentDate(dto.getNextPaymentDate())
+                .paymentDate(dto.getPaymentDate())
+                .startDate(dto.getStartDate())
+                .product(product)
+                .provider(provider)
+                .build();
+    }
 }
