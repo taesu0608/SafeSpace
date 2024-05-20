@@ -28,10 +28,11 @@ public class RegisterIp {
         this.workplaceInformation = workplaceInformation;
     }
 
-    public static RegisterIp toEntity(RegisterIpDTO dto){
+    public static RegisterIp toEntity(RegisterIpDTO dto, WorkplaceInformation workplaceInformation){
         return RegisterIp.builder()
                 .ip(dto.getIp())
                 .uid(dto.getUid())
+                .workplaceInformation(workplaceInformation)
                 .build();
     }
 }

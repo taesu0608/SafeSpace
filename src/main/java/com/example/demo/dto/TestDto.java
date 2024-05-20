@@ -1,12 +1,12 @@
 package com.example.demo.dto;
 
-import com.example.demo.repository.TestRepository;
-import lombok.Builder;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+
+import lombok.NoArgsConstructor;
 import org.antlr.v4.runtime.misc.NotNull;
 
-
-@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class TestDto {
     private Integer id;
     @NotNull

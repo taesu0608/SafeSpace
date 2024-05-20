@@ -13,10 +13,12 @@ import java.util.Optional;
 public class SubscribeInformationService {
     private final SubscribeInformationRepo subscribeInformationRepo;
 
+    //모든 구독 상황 조회
     public List<SubscribeInformation> getAllSubscribeInformation() {
         return subscribeInformationRepo.findAll();
     }
 
+    //상품 검색
     public SubscribeInformation getSubscribeInformationById(Integer id) {
         Optional<SubscribeInformation> subscribeInformation =  subscribeInformationRepo.findById(id);
         if(subscribeInformation.isPresent()) {
@@ -25,8 +27,15 @@ public class SubscribeInformationService {
             return null;
     }
 
-    //TODO uid 조회 구현 예정
-//    public List<SubscribeInformation> getSubscribeInformationByUid(String uid) {
-//
-//    }
+    //uid 조회
+    public List<SubscribeInformation> getSubscribeInformationByUid(String uid) {
+        return subscribeInformationRepository.findByUid(uid);
+    }
+
+    //저장
+    public void saveSubscribeInformation(SubscribeInformation subscribeInformation) {
+        subscribeInformationRepository.save(subscribeInformation);
+    }
+
+
 }
