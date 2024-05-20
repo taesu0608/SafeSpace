@@ -26,6 +26,6 @@ public class RegisterIpService {
     }
 
     public void saveRegisterIp(RegisterIp registerIp) {
-        registerIpRepository.save(registerIp);
+        registerIpRepo.save(registerIp);
     }
 }

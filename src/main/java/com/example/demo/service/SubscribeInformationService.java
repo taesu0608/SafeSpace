@@ -29,12 +29,12 @@ public class SubscribeInformationService {
 
     //uid 조회
     public List<SubscribeInformation> getSubscribeInformationByUid(String uid) {
-        return subscribeInformationRepository.findByUid(uid);
+        return subscribeInformationRepo.findByUid(uid);
     }
 
     //저장
     public void saveSubscribeInformation(SubscribeInformation subscribeInformation) {
-        subscribeInformationRepository.save(subscribeInformation);
+        subscribeInformationRepo.save(subscribeInformation);
     }
 
 
