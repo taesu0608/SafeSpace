@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface SubscribeInformationRepository extends JpaRepository<SubscribeInformation, Integer> {
+public interface SubscribeInformationRepo extends JpaRepository<SubscribeInformation, Integer> {
     List<SubscribeInformation> findByUid(String uid);
 }

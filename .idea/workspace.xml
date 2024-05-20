@@ -4,34 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="feat: Entity 연결&#10;&#10;Entity 관계 연결">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_classgraph_classgraph_4_8_83.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_bean_validators_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_boot_starter_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_core_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_data_rest_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_oas_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_schema_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spi_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_web_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_webflux_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_webmvc_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger2_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_common_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_ui_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_core_v3_swagger_annotations_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_core_v3_swagger_models_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mapstruct_mapstruct_1_3_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProviderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="feat : Service, Controller&#10;&#10;맡은 Service 및 Controller 구현( RegisterIp, SubscribeInformation, workplaceInformation)">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/demo.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/demo.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/RegisterIpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/RegisterIpRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProductRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProviderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ProviderRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/RegisterIpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/RegisterIpRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/SubscribeInformationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/SubscribeInformationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/WorkplaceInformationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/WorkplaceInformationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RegisterIpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/RegisterIpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SubscribeInformationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/SubscribeInformationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -78,7 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="soyoon" />
+        <entry key="$PROJECT_DIR$" value="master2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,7 +117,7 @@
     "git-widget-placeholder": "taesu0608",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/t5t0t/IdeaProjects/demo",
+    "last_opened_file_path": "C:/Users/KJW/Code/kotlinProgramming/rapid",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -222,9 +205,9 @@
       <list>
         <item itemvalue="Gradle.DemoApplicationTest.testService" />
         <item itemvalue="Gradle.DemoApplicationTest.test" />
+        <item itemvalue="Gradle.DemoApplicationTest.test" />
         <item itemvalue="Gradle.DemoApplicationTest.testService" />
-        <item itemvalue="Gradle.DemoApplicationTest.test" />
-        <item itemvalue="Gradle.DemoApplicationTest.test" />
+        <item itemvalue="Gradle.DemoApplicationTest.testService" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +246,11 @@
       <workItem from="1715823280078" duration="3574000" />
       <workItem from="1715858610786" duration="2497000" />
       <workItem from="1715871720055" duration="3579000" />
-      <workItem from="1715909056437" duration="1192000" />
+      <workItem from="1715909056437" duration="9602000" />
+      <workItem from="1715997192080" duration="6957000" />
+      <workItem from="1716103597744" duration="425000" />
+      <workItem from="1716112635141" duration="7427000" />
+      <workItem from="1716172548010" duration="2111000" />
     </task>
     <task id="LOCAL-00001" summary="feat:&#10;1. SprintBoot 구조 구현">
       <option name="closed" value="true" />
@@ -305,7 +292,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715849877492</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: DTO 설계&#10;&#10;맡은 DTO( RegisterIpDTO.java, SubscribeInformationDTO.java, WorkplaceInformationDTO.java, )를 설계">
+      <option name="closed" value="true" />
+      <created>1715911490444</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715911490444</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: DTO, Entity 수정&#10;Entity의 Product, Provider 등 외래키를 필요로 하는 객체를 DTO로 변환할 때 각 객체가 가지고 있는 id로 변경&#10;(추후 JSON 잘 작동되면 객체 자체를 보낼 예정) &#10;&#10;다시 DTO에서 Entity 변경할 때는 Service 단에서 객체를 조회해서 채워줄 예정&#10;&#10;feat : Workplace join Service 및 Controller 구현">
+      <option name="closed" value="true" />
+      <created>1716085988296</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716085988296</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat : Service, Controller&#10;&#10;맡은 Service 및 Controller 구현( RegisterIp, SubscribeInformation, workplaceInformation)">
+      <option name="closed" value="true" />
+      <created>1716114777441</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716114777441</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +348,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="taesu0608" />
+                        <option value="origin/soyoon" />
                       </list>
                     </value>
                   </entry>
@@ -356,7 +367,10 @@
     <MESSAGE value="feat:&#10;1. DB, JPA 의존성 추가&#10;2. DB 데이터 값 삽입" />
     <MESSAGE value="feat: Entity Relation, Repository&#10;1. Entity 관계 형성 및 DB Table 생성 확인&#10;2. Repository 구현" />
     <MESSAGE value="feat: Entity 연결&#10;&#10;Entity 관계 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Entity 연결&#10;&#10;Entity 관계 연결" />
+    <MESSAGE value="feat: DTO 설계&#10;&#10;맡은 DTO( RegisterIpDTO.java, SubscribeInformationDTO.java, WorkplaceInformationDTO.java, )를 설계" />
+    <MESSAGE value="fix: DTO, Entity 수정&#10;Entity의 Product, Provider 등 외래키를 필요로 하는 객체를 DTO로 변환할 때 각 객체가 가지고 있는 id로 변경&#10;(추후 JSON 잘 작동되면 객체 자체를 보낼 예정) &#10;&#10;다시 DTO에서 Entity 변경할 때는 Service 단에서 객체를 조회해서 채워줄 예정&#10;&#10;feat : Workplace join Service 및 Controller 구현" />
+    <MESSAGE value="feat : Service, Controller&#10;&#10;맡은 Service 및 Controller 구현( RegisterIp, SubscribeInformation, workplaceInformation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : Service, Controller&#10;&#10;맡은 Service 및 Controller 구현( RegisterIp, SubscribeInformation, workplaceInformation)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
