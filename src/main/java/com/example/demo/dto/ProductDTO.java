@@ -14,6 +14,7 @@ public class ProductDTO {
 
     private String productId;
     private String productName;
+    private String providerId;
     private String imgPath;
     private String category;
     private String description;
@@ -31,6 +32,7 @@ public class ProductDTO {
                 .capacity(entity.getCapacity())
                 .month(entity.getMonth())
                 .price(entity.getPrice())
+                .providerId(entity.getProvider().getProvider_id())
                 .build();
     }
 }

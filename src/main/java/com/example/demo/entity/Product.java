@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.dto.ProductDTO;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -46,7 +47,7 @@ public class Product {
     private List<SubscribeInformation> subscribeInformation;
 
     @Builder
-    public Product(String product_id,String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price) {
+    public Product(String product_id,String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price, Provider provider) {
         this.product_id = product_id;
         this.product_name = product_name;
         this.img_path = img_path;
@@ -55,5 +56,20 @@ public class Product {
         this.capacity = capacity;
         this.month = month;
         this.price = price;
+        this.provider = provider;
+    }
+
+    public static Product toEntity(ProductDTO dto, Provider provider) {
+        return Product.builder()
+                .product_id(dto.getProductId())
+                .product_name(dto.getProductName())
+                .img_path(dto.getImgPath())
+                .category(dto.getCategory())
+                .description(dto.getDescription())
+                .capacity(dto.getCapacity())
+                .month(dto.getMonth())
+                .price(dto.getPrice())
+                .provider(provider)
+                .build();
     }
 }
