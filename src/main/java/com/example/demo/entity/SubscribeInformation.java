@@ -13,7 +13,6 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @EnableJpaAuditing
-@Table(name = "SubscribeInformation")
 public class SubscribeInformation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -9,7 +9,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @Entity
 @Getter
 @Setter
-@Table(name = "RegisterIp")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class RegisterIp {
     @Id

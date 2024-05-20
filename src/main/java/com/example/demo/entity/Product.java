@@ -13,7 +13,6 @@ import java.util.List;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "product")
 public class Product {
     @Id
     @Column(nullable = false, length = 150)
