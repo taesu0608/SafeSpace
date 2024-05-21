@@ -1,32 +1,10 @@
-[
-  {
-    "productId": "11111",
-    "productName": "50people",
-    "imgPath": "",
-    "category": "Movie",
-    "description": "High-quality widget with advanced features.",
-    "capacity": 50,
-    "month": 5,
-    "price": 1050
-  },
-  {
-    "productId": "22222",
-    "productName": "100people",
-    "imgPath": "",
-    "category": "Music",
-    "description": "High-quality widget with advanced features.",
-    "capacity": 100,
-    "month": 5,
-    "price": 2050
-  },
-  {
-    "productId": "33333",
-    "productName": "150people",
-    "imgPath": "",
-    "category": "Book",
-    "description": "High-quality widget with advanced features.",
-    "capacity": 200,
-    "month": 5,
-    "price": 3050
-  }
-]
+{
+  "productId": "11111",
+  "productName": "50people",
+  "imgPath": "",
+  "category": "Movie",
+  "description": "High-quality widget with advanced features.",
+  "capacity": 50,
+  "month": 5,
+  "price": 1050
+}

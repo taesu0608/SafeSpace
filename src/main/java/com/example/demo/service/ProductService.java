@@ -1,9 +1,12 @@
 package com.example.demo.service;
 
+import com.example.demo.dto.ProductDTO;
 import com.example.demo.entity.Product;
+import com.example.demo.entity.Provider;
 import com.example.demo.repository.ProductRepo;
-import com.google.gson.Gson;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -16,37 +19,42 @@ import java.io.InputStreamReader;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
+
     @Autowired
     private final ProductRepo productRepo;
 
-    public Product productUpdate() {
+    @SneakyThrows//상위로 예외던짐
+    public void productInit(Provider provider) {
         String str = "";
         String sb = "";
         ClassPathResource resource = null;
         InputStreamReader reader = null;
 
+        //static폴더의 json파일을 string으로 저장
         try{
             resource = new ClassPathResource("static/product.json");
             reader = new InputStreamReader(resource.getInputStream(), "UTF-8");
             BufferedReader br = new BufferedReader(reader);
             while ((str = br.readLine()) != null) {
-
-                System.out.println(str); sb += str + "\n";
-
+                sb += str + "\n";
             }
         }catch(IOException e){
             System.out.println(e);
         }
 
-        Gson gson = new Gson();
-        Product product = gson.fromJson(str,Product.class);
+        //String(json)을 Object로 변환
+        ObjectMapper objectMapper = new ObjectMapper();
+        ProductDTO product = objectMapper.readValue(sb,ProductDTO.class);
 
-        System.out.println(product);
+        productRepo.save( Product.toEntity(product, provider));
 
-        return product;
+        //TODO Json배열형 object 변환
+        //ProductDTO[] products = objectMapper.readValue(sb,ProductDTO[].class);
+        /*
+           for (ProductDTO product : products) {
+                productRepo.save( Product.toEntity(product, provider));}*/
     }
     public void saveProduct(Product product) {
         productRepo.save(product);
     }
-
 }

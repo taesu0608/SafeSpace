@@ -12,13 +12,13 @@ public class ProviderDTO {
 
     private String providerId;
     private String name;
-    private String img_path;
+    private String imgPath;
 
     public static ProviderDTO toDTO(Product entity) {
         return ProviderDTO.builder()
-                .providerId(entity.getProduct_id())
-                .name(entity.getProduct_name())
-                .img_path(entity.getImg_path())
+                .providerId(entity.getProductId())
+                .name(entity.getProductName())
+                .imgPath(entity.getImgPath())
                 .build();
     }
 }

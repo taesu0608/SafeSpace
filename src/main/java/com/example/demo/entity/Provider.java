@@ -5,8 +5,6 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.List;
 
@@ -16,13 +14,13 @@ import java.util.List;
 public class Provider {
     @Id
     @Column(nullable = false, length = 150)
-    private String provider_id;
+    private String providerId;
 
     @Column(length = 100)
     private String name;
 
     @Column(length = 255)
-    private String img_path;
+    private String imgPath;
 
     @OneToMany(mappedBy = "provider", cascade = CascadeType.ALL)
     private List<Product> productList;
@@ -31,9 +29,9 @@ public class Provider {
     private List<SubscribeInformation> subscribeInformation;
 
     @Builder
-    public Provider(String provider_id, String name, String img_path) {
-        this.provider_id = provider_id;
+    public Provider(String providerId, String name, String imgPath) {
+        this.providerId = providerId;
         this.name = name;
-        this.img_path=img_path;
+        this.imgPath=imgPath;
     }
 }

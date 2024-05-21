@@ -1,7 +1,9 @@
 package com.example.demo;
 
-import com.example.demo.dto.ProductDTO;
+import com.example.demo.entity.Product;
+import com.example.demo.entity.Provider;
 import com.example.demo.repository.ProductRepo;
+import com.example.demo.repository.ProviderRepo;
 import com.example.demo.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +20,9 @@ public class DemoApplication {
 	ProductService productService;
 	@Autowired
 	ProductRepo productRepo;
+	@Autowired
+	ProviderRepo providerRepo;
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
@@ -25,9 +30,14 @@ public class DemoApplication {
 	//localhost:8080를 호출하면 helloWorld를 찍어주기 위한 함수
 	@RequestMapping("/")
 	public String helloWorld(){
-
-		productService.saveProduct(productService.productUpdate());
-
+		//TODo provider json 파일 후 init메서드 작성
+		Provider provider = Provider.builder()
+				.providerId("a")
+				.name("abc")
+				.imgPath("asc")
+				.build();
+		providerRepo.save(provider);
+		productService.productInit(provider);
 		return "helloW나야d12345";
 	}
 

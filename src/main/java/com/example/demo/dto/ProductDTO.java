@@ -24,15 +24,15 @@ public class ProductDTO {
 
     public static ProductDTO toDTO(Product entity) {
         return ProductDTO.builder()
-                .productId(entity.getProduct_id())
-                .productName(entity.getProduct_name())
-                .imgPath(entity.getImg_path())
+                .productId(entity.getProductId())
+                .productName(entity.getProductName())
+                .imgPath(entity.getImgPath())
                 .category(entity.getCategory())
                 .description(entity.getDescription())
                 .capacity(entity.getCapacity())
                 .month(entity.getMonth())
                 .price(entity.getPrice())
-                .providerId(entity.getProvider().getProvider_id())
+                .providerId(entity.getProvider().getProviderId())
                 .build();
     }
 }

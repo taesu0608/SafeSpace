@@ -17,13 +17,13 @@ import java.util.List;
 public class Product {
     @Id
     @Column(nullable = false, length = 150)
-    private String product_id;
+    private String productId;
 
     @Column(length = 100)
-    private String product_name;
+    private String productName;
 
     @Column(length = 255)
-    private String img_path;
+    private String imgPath;
 
     @Column(length = 100)
     private String category;
@@ -47,10 +47,10 @@ public class Product {
     private List<SubscribeInformation> subscribeInformation;
 
     @Builder
-    public Product(String product_id,String product_name, String img_path, String category, String description, Integer capacity, Integer month, Integer price, Provider provider) {
-        this.product_id = product_id;
-        this.product_name = product_name;
-        this.img_path = img_path;
+    public Product(String product_id,String product_name, String imgPath, String category, String description, Integer capacity, Integer month, Integer price, Provider provider) {
+        this.productId = product_id;
+        this.productName = product_name;
+        this.imgPath = imgPath;
         this.category = category;
         this.description = description;
         this.capacity = capacity;
@@ -63,7 +63,7 @@ public class Product {
         return Product.builder()
                 .product_id(dto.getProductId())
                 .product_name(dto.getProductName())
-                .img_path(dto.getImgPath())
+                .imgPath(dto.getImgPath())
                 .category(dto.getCategory())
                 .description(dto.getDescription())
                 .capacity(dto.getCapacity())
