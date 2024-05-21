@@ -8,14 +8,14 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProviderDTO {
+public class ProviderDto {
 
     private String providerId;
     private String name;
     private String imgPath;
 
-    public static ProviderDTO toDTO(Product entity) {
-        return ProviderDTO.builder()
+    public static ProviderDto toDTO(Product entity) {
+        return ProviderDto.builder()
                 .providerId(entity.getProductId())
                 .name(entity.getProductName())
                 .imgPath(entity.getImgPath())

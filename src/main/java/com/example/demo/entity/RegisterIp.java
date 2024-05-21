@@ -1,10 +1,8 @@
 package com.example.demo.entity;
 
-import com.example.demo.dto.RegisterIpDTO;
+import com.example.demo.dto.RegisterIpDto;
 import jakarta.persistence.*;
 import lombok.*;
-import org.apache.ibatis.annotations.Many;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @Entity
 @Getter
@@ -28,7 +26,7 @@ public class RegisterIp {
         this.workplaceInformation = workplaceInformation;
     }
 
-    public static RegisterIp toEntity(RegisterIpDTO dto, WorkplaceInformation workplaceInformation){
+    public static RegisterIp toEntity(RegisterIpDto dto, WorkplaceInformation workplaceInformation){
         return RegisterIp.builder()
                 .ip(dto.getIp())
                 .uid(dto.getUid())

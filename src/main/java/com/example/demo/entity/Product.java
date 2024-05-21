@@ -1,13 +1,11 @@
 package com.example.demo.entity;
 
-import com.example.demo.dto.ProductDTO;
+import com.example.demo.dto.ProductDto;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.List;
 
@@ -59,7 +57,7 @@ public class Product {
         this.provider = provider;
     }
 
-    public static Product toEntity(ProductDTO dto, Provider provider) {
+    public static Product toEntity(ProductDto dto, Provider provider) {
         return Product.builder()
                 .product_id(dto.getProductId())
                 .product_name(dto.getProductName())

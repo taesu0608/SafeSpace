@@ -3,14 +3,12 @@ package com.example.demo.dto;
 import com.example.demo.entity.Product;
 import lombok.*;
 
-import java.math.BigInteger; // Assuming price is a large integer
-
 @ToString
 @Builder
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductDTO {
+public class ProductDto {
 
     private String productId;
     private String productName;
@@ -22,8 +20,8 @@ public class ProductDTO {
     private Integer month;
     private Integer price;
 
-    public static ProductDTO toDTO(Product entity) {
-        return ProductDTO.builder()
+    public static ProductDto toDTO(Product entity) {
+        return ProductDto.builder()
                 .productId(entity.getProductId())
                 .productName(entity.getProductName())
                 .imgPath(entity.getImgPath())

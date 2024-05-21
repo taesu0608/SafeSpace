@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.dto.RegisterIpDTO;
 import com.example.demo.entity.RegisterIp;
 import com.example.demo.entity.WorkplaceInformation;
 import com.example.demo.service.RegisterIpService;

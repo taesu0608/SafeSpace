@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class SubscribeInformationDTO {
+public class SubscribeInformationDto {
     private Integer id;
     private String uid;
     private String name;
@@ -22,8 +22,8 @@ public class SubscribeInformationDTO {
     private LocalDate startDate;
 
 
-    public static SubscribeInformationDTO toDTO(SubscribeInformation entity) {
-        return SubscribeInformationDTO.builder()
+    public static SubscribeInformationDto toDTO(SubscribeInformation entity) {
+        return SubscribeInformationDto.builder()
                 .id(entity.getId())
                 .uid(entity.getUid())
                 .name(entity.getName())

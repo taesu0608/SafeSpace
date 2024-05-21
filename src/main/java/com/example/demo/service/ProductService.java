@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.ProductDTO;
+import com.example.demo.dto.ProductDto;
 import com.example.demo.entity.Product;
 import com.example.demo.entity.Provider;
 import com.example.demo.repository.ProductRepo;
@@ -44,7 +44,7 @@ public class ProductService {
 
         //String(json)을 Object로 변환
         ObjectMapper objectMapper = new ObjectMapper();
-        ProductDTO product = objectMapper.readValue(sb,ProductDTO.class);
+        ProductDto product = objectMapper.readValue(sb, ProductDto.class);
 
         productRepo.save( Product.toEntity(product, provider));
 

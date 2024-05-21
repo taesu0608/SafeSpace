@@ -1,10 +1,8 @@
 package com.example.demo.entity;
 
-import com.example.demo.dto.SubscribeInformationDTO;
+import com.example.demo.dto.SubscribeInformationDto;
 import jakarta.persistence.*;
 import lombok.*;
-import org.apache.ibatis.annotations.Many;
-import org.hibernate.jdbc.Work;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.time.LocalDate;
@@ -61,7 +59,7 @@ public class SubscribeInformation {
     @ManyToOne
     private Product product;
 
-    public static SubscribeInformation toEntity(SubscribeInformationDTO dto, Provider provider, Product product){
+    public static SubscribeInformation toEntity(SubscribeInformationDto dto, Provider provider, Product product){
         return SubscribeInformation.builder()
                 .uid(dto.getUid())
                 .name(dto.getName())

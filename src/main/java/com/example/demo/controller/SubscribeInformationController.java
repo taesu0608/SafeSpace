@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.dto.SubscribeInformationDTO;
+import com.example.demo.dto.SubscribeInformationDto;
 import com.example.demo.entity.SubscribeInformation;
 import com.example.demo.service.SubscribeInformationService;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +21,7 @@ public class SubscribeInformationController {
     //구독 상품 추가
     //TODO ProductService, ProviderService 가 만들어진 후 작성
     @GetMapping("/add/")
-    public Boolean addSubscribeInformation(@RequestBody SubscribeInformationDTO subscribeInformation) {
+    public Boolean addSubscribeInformation(@RequestBody SubscribeInformationDto subscribeInformation) {
 //        subscribeInformationService.saveSubscribeInformation(
 //                SubscribeInformation.toEntity(
 //                        subscribeInformation,
@@ -34,21 +34,21 @@ public class SubscribeInformationController {
 
     //id 조회
     @GetMapping("/find/")
-    public SubscribeInformationDTO getSubscribeInformationById(@RequestParam("id") Integer id) {
-        return new SubscribeInformationDTO().toDTO(
+    public SubscribeInformationDto getSubscribeInformationById(@RequestParam("id") Integer id) {
+        return new SubscribeInformationDto().toDTO(
                 subscribeInformationService.getSubscribeInformationById(id)
         );
     }
 
     //uid 조회
     @GetMapping("/findByUid/")
-    public List<SubscribeInformationDTO> getSubscribeInformationByUid(@RequestParam("uid") String uid) {
+    public List<SubscribeInformationDto> getSubscribeInformationByUid(@RequestParam("uid") String uid) {
         ArrayList<SubscribeInformation> subscribeInformations
                 = (ArrayList<SubscribeInformation>) subscribeInformationService.getSubscribeInformationByUid(uid);
 
-        ArrayList<SubscribeInformationDTO> dtos = new ArrayList<>();
+        ArrayList<SubscribeInformationDto> dtos = new ArrayList<>();
         for(SubscribeInformation subscribeInformation : subscribeInformations) {
-            dtos.add(new SubscribeInformationDTO().toDTO(subscribeInformation));
+            dtos.add(new SubscribeInformationDto().toDTO(subscribeInformation));
         }
 
         return dtos;

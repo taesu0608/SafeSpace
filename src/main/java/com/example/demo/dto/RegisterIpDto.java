@@ -8,12 +8,12 @@ import lombok.*;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RegisterIpDTO {
+public class RegisterIpDto {
     private String ip;
     private String uid;
 
-    public static RegisterIpDTO toDTO(RegisterIp entity) {
-        return RegisterIpDTO.builder()
+    public static RegisterIpDto toDTO(RegisterIp entity) {
+        return RegisterIpDto.builder()
                 .ip(entity.getIp())
                 .uid(entity.getUid())
                 .build();

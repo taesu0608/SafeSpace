@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class WorkplaceInformationDTO {
+public class WorkplaceInformationDto {
     private String uid;
     private String workspaceIp;
     private String dancPin;
@@ -21,8 +21,8 @@ public class WorkplaceInformationDTO {
     private String workspacePhone;
     private LocalDate joinDate;
 
-    public static WorkplaceInformationDTO toDTO(WorkplaceInformation entity) {
-        return WorkplaceInformationDTO.builder()
+    public static WorkplaceInformationDto toDTO(WorkplaceInformation entity) {
+        return WorkplaceInformationDto.builder()
                 .uid(entity.getUid())
                 .workspaceIp(entity.getWorkspaceIp())
                 .dancPin(entity.getDancPin())

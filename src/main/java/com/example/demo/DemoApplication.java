@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.entity.Product;
 import com.example.demo.entity.Provider;
 import com.example.demo.repository.ProductRepo;
 import com.example.demo.repository.ProviderRepo;
