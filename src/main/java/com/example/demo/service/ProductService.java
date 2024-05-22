@@ -24,7 +24,7 @@ public class ProductService {
     private final ProductRepo productRepo;
 
     @SneakyThrows//상위로 예외던짐
-    public void productInit(Provider provider) {
+    public Product productInit(Provider provider) {
         String str = "";
         String sb = "";
         ClassPathResource resource = null;
@@ -46,13 +46,14 @@ public class ProductService {
         ObjectMapper objectMapper = new ObjectMapper();
         ProductDto product = objectMapper.readValue(sb, ProductDto.class);
 
-        productRepo.save( Product.toEntity(product, provider));
 
         //TODO Json배열형 object 변환
         //ProductDTO[] products = objectMapper.readValue(sb,ProductDTO[].class);
         /*
            for (ProductDTO product : products) {
-                productRepo.save( Product.toEntity(product, provider));}*/
+                productRepo.save( Product.toEntity(product, provider));}
+        */
+        return Product.toEntity(product, provider);
     }
     public void saveProduct(Product product) {
         productRepo.save(product);

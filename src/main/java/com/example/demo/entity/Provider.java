@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.dto.ProviderDto;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -33,5 +34,13 @@ public class Provider {
         this.providerId = providerId;
         this.name = name;
         this.imgPath=imgPath;
+    }
+
+    public static Provider toEntity(ProviderDto dto){
+        return Provider.builder()
+                .providerId(dto.getProviderId())
+                .name(dto.getName())
+                .imgPath(dto.getImgPath())
+                .build();
     }
 }

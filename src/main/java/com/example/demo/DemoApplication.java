@@ -1,9 +1,9 @@
 package com.example.demo;
 
-import com.example.demo.entity.Provider;
 import com.example.demo.repository.ProductRepo;
 import com.example.demo.repository.ProviderRepo;
 import com.example.demo.service.ProductService;
+import com.example.demo.service.ProviderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +18,8 @@ public class DemoApplication {
 	@Autowired
 	ProductService productService;
 	@Autowired
+	ProviderService providerService;
+	@Autowired
 	ProductRepo productRepo;
 	@Autowired
 	ProviderRepo providerRepo;
@@ -30,14 +32,8 @@ public class DemoApplication {
 	@RequestMapping("/")
 	public String helloWorld(){
 		//TODo provider json 파일 후 init메서드 작성
-		Provider provider = Provider.builder()
-				.providerId("a")
-				.name("abc")
-				.imgPath("asc")
-				.build();
-		providerRepo.save(provider);
-		productService.productInit(provider);
+		providerService.saveProvider(providerService.providerInit());
+		productService.saveProduct(productService.productInit(providerService.providerInit()));
 		return "helloW나야d12345";
 	}
-
 }
