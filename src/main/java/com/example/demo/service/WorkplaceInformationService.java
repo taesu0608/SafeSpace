@@ -25,4 +25,8 @@ public class WorkplaceInformationService {
     public void saveWorkplaceInformation(WorkplaceInformation workplaceInformation) {
         workplaceInformationRepo.save(workplaceInformation);
     }
+
+    public Boolean exsitWorkplaceInformation(String uid) {
+        return workplaceInformationRepo.existsById(uid);
+    }
 }

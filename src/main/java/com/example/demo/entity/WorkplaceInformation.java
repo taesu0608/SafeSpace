@@ -44,7 +44,7 @@ public class WorkplaceInformation {
 
     @Builder
     public WorkplaceInformation(String uid, String workspaceIp, String dancPin, String workspaceName, String ownerName,
-                                String address, String businessType, String workspacePhone, LocalDate joinDate){
+                                String address, String businessType, String workspacePhone){
         this.uid = uid;
         this.workspaceIp = workspaceIp;
         this.dancPin = dancPin;
@@ -53,7 +53,7 @@ public class WorkplaceInformation {
         this.address = address;
         this.businessType = businessType;
         this.workspacePhone = workspacePhone;
-        this.joinDate = joinDate;
+        this.joinDate = LocalDate.now();
         this.registerIps = new ArrayList<>();
         this.subscribeInformations = new ArrayList<>();
 
@@ -66,6 +66,8 @@ public class WorkplaceInformation {
     private List<SubscribeInformation> subscribeInformations;
 
     public static WorkplaceInformation toEntity(WorkplaceInformationDto dto){
+        if(dto == null) return null;
+
         return WorkplaceInformation.builder()
                 .uid(dto.getUid())
                 .workspaceIp(dto.getWorkspaceIp())
@@ -75,7 +77,6 @@ public class WorkplaceInformation {
                 .address(dto.getAddress())
                 .businessType(dto.getBusinessType())
                 .workspacePhone(dto.getWorkspacePhone())
-                .joinDate(dto.getJoinDate())
                 .build();
     }
 }

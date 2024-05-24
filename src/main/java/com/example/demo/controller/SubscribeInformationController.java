@@ -11,7 +11,7 @@ import java.util.List;
 
 
 @RestController //JSON 형태로 반환하는 컨트롤러
-@RequestMapping("/subscribe_info")
+    @RequestMapping("/subscribe_info")
 @RequiredArgsConstructor
 public class SubscribeInformationController {
     private final SubscribeInformationService subscribeInformationService;
@@ -20,8 +20,9 @@ public class SubscribeInformationController {
 
     //구독 상품 추가
     //TODO ProductService, ProviderService 가 만들어진 후 작성
-    @GetMapping("/add/")
-    public Boolean addSubscribeInformation(@RequestBody SubscribeInformationDto subscribeInformation) {
+    @PostMapping("/add/")
+    public Boolean addSubscribeInformation(@RequestParam("uid") String uid,
+                                           @RequestParam("productId") String productId) {
 //        subscribeInformationService.saveSubscribeInformation(
 //                SubscribeInformation.toEntity(
 //                        subscribeInformation,
@@ -41,7 +42,7 @@ public class SubscribeInformationController {
     }
 
     //uid 조회
-    @GetMapping("/findByUid/")
+    @PostMapping("/findByUid/")
     public List<SubscribeInformationDto> getSubscribeInformationByUid(@RequestParam("uid") String uid) {
         ArrayList<SubscribeInformation> subscribeInformations
                 = (ArrayList<SubscribeInformation>) subscribeInformationService.getSubscribeInformationByUid(uid);
