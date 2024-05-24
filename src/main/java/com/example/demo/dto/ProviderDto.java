@@ -1,6 +1,7 @@
 package com.example.demo.dto;
 
 import com.example.demo.entity.Product;
+import com.example.demo.entity.Provider;
 import lombok.*;
 
 @ToString
@@ -14,10 +15,10 @@ public class ProviderDto {
     private String name;
     private String imgPath;
 
-    public static ProviderDto toDTO(Product entity) {
+    public static ProviderDto toDTO(Provider entity) {
         return ProviderDto.builder()
-                .providerId(entity.getProductId())
-                .name(entity.getProductName())
+                .providerId(entity.getProviderId())
+                .name(entity.getName())
                 .imgPath(entity.getImgPath())
                 .build();
     }
