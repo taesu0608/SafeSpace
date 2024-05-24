@@ -3,8 +3,8 @@ package com.example.demo.service;
 import com.example.demo.dto.ProductDto;
 import com.example.demo.entity.Product;
 import com.example.demo.entity.Provider;
-import com.example.demo.entity.SubscribeInformation;
 import com.example.demo.repository.ProductRepo;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,7 +29,7 @@ public class ProductService {
     private final ProductRepo productRepo;
 
     @SneakyThrows//상위로 예외던짐
-    public Product productInit(Provider provider) {
+    public ArrayList<ProductDto> productInit() {
         String str = "";
         String sb = "";
         ClassPathResource resource = null;
@@ -47,18 +49,21 @@ public class ProductService {
 
         //String(json)을 Object로 변환
         ObjectMapper objectMapper = new ObjectMapper();
-        ProductDto product = objectMapper.readValue(sb, ProductDto.class);
+        
+        //Json Object일 경우 사용
+        /*ProductDto product = objectMapper.readValue(sb, ProductDto.class);*/
 
-        //TODO Json배열형 object 변환
-        //ProductDTO[] products = objectMapper.readValue(sb,ProductDTO[].class);
-        /*
-           for (ProductDTO product : products) {
-                productRepo.save( Product.toEntity(product, provider));}
-        */
-        return Product.toEntity(product, provider);
+        //Json Array일 경우 사용
+        ArrayList<ProductDto> products = objectMapper.readValue(sb,new TypeReference<ArrayList<ProductDto>>(){});
+
+        return products;
     }
-
-    public void saveProduct(Product product) {
+    
+    //개별 상품 저장
+    public void saveProduct(Product product) {productRepo.save(product);}
+    
+    //모든 상품 저장
+    public void saveAllProduct(Product product) {
         productRepo.save(product);
     }
 

@@ -32,7 +32,7 @@ public class ProductController {
     }
 
     //개별 Product 조회
-    @GetMapping("/get/")
+    @GetMapping("/get2/")
     public ProductDto getProductById(@RequestParam("productId") String productId) {
         return new ProductDto().toDTO(
                 productService.getProductById(productId)
