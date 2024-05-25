@@ -23,7 +23,7 @@ public class ProviderController {
     ProviderService providerService;
 
     //모든 Provider 조회
-    @GetMapping("/find/")
+    @GetMapping("/findAll/")
     public List<ProviderDto> getProvider() {
         ArrayList<ProviderDto> dtos = new ArrayList<>();
         for (Provider p : providerService.getAllProviders()) {
@@ -35,7 +35,8 @@ public class ProviderController {
 
 
     //카테고리별 Providre 조회
-    @GetMapping("/findAll/")
+    //TODO: 카테고리 조회
+    @GetMapping("/findCategory/")
     public List<ProviderDto> getProvider2(){
         ArrayList<ProviderDto> dtos = new ArrayList<>() ;
         for (Provider p : providerService.getAllProviders()) {

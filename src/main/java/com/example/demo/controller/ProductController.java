@@ -17,12 +17,13 @@ import java.util.List;
 @RequestMapping("/product")
 @RequiredArgsConstructor
 public class ProductController {
-
     @Autowired
     private ProductService productService;
 
+    //TODO : providerId 조회 추가
+
     //모든 Product 조회
-    @GetMapping("/find/")
+    @GetMapping("/findAll/")
     public List<ProductDto> getProduct() {
         ArrayList<ProductDto> dtos = new ArrayList<>();
         for (Product p : productService.getAllProduct()) {
@@ -32,7 +33,7 @@ public class ProductController {
     }
 
     //개별 Product 조회
-    @GetMapping("/findAll/")
+    @GetMapping("/find/")
     public ProductDto getProductById(@RequestParam("productId") String productId) {
         return new ProductDto().toDTO(
                 productService.getProductById(productId)

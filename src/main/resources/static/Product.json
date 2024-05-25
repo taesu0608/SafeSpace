@@ -2,7 +2,7 @@
   {
     "productId": "1",
     "productName": "50people",
-    "imgPath": "/img/product_logo/netflex.png",
+    "imgPath": "img/product_logo/netflex.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
@@ -16,7 +16,7 @@
   {
     "productId": "2",
     "productName": "100people",
-    "imgPath": "/img/product_logo/netflex.png",
+    "imgPath": "img/product_logo/netflex.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
@@ -30,7 +30,7 @@
   {
     "productId": "3",
     "productName": "150people",
-    "imgPath": "/img/product_logo/netflex.png",
+    "imgPath": "img/product_logo/netflex.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
@@ -44,7 +44,7 @@
   {
     "productId": "4",
     "productName": "50people",
-    "imgPath": "/img/product_logo/millie.png",
+    "imgPath": "img/product_logo/millie.png",
     "category":  {
       "id": "b",
       "categoryName": "book"
@@ -58,7 +58,7 @@
   {
     "productId": "5",
     "productName": "100people",
-    "imgPath": "/img/product_logo/millie.png",
+    "imgPath": "img/product_logo/millie.png",
     "category":  {
       "id": "b",
       "categoryName": "book"
@@ -72,7 +72,7 @@
   {
     "productId": "6",
     "productName": "150people",
-    "imgPath": "/img/product_logo/millie.png",
+    "imgPath": "img/product_logo/millie.png",
     "category":  {
       "id": "b",
       "categoryName": "book"
@@ -86,7 +86,7 @@
   {
     "productId": "7",
     "productName": "50people",
-    "imgPath": "/img/product_logo/genie.png",
+    "imgPath": "img/product_logo/genie.png",
     "category": {
       "id": "c",
       "categoryName": "music"
@@ -100,7 +100,7 @@
   {
     "productId": "8",
     "productName": "100people",
-    "imgPath": "/img/product_logo/genie.png",
+    "imgPath": "img/product_logo/genie.png",
     "category": {
       "id": "c",
       "categoryName": "music"
@@ -114,7 +114,7 @@
   {
     "productId": "9",
     "productName": "150people",
-    "imgPath": "/img/product_logo/genie.png",
+    "imgPath": "img/product_logo/genie.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
@@ -128,7 +128,7 @@
   {
     "productId": "10",
     "productName": "50people",
-    "imgPath": "/img/product_logo/watcha.png",
+    "imgPath": "img/product_logo/watcha.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
@@ -142,7 +142,7 @@
   {
     "productId": "11",
     "productName": "100people",
-    "imgPath": "/img/product_logo/watcha.png",
+    "imgPath": "img/product_logo/watcha.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
@@ -156,7 +156,7 @@
   {
     "productId": "12",
     "productName": "150people",
-    "imgPath": "/img/product_logo/watcha.png",
+    "imgPath": "img/product_logo/watcha.png",
     "category": {
       "id": "a",
       "categoryName": "movie"
