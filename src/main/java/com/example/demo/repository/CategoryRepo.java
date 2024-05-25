@@ -1,13 +1,13 @@
 package com.example.demo.repository;
 
+import com.example.demo.entity.Category;
 import com.example.demo.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import java.util.List;
 
 @Repository
-public interface ProductRepo extends JpaRepository<Product,String> {
-    Optional<Product> findById(String id);
-
+public interface CategoryRepo extends JpaRepository<Category,String> {
+    List<Category> findByCategoryName(String categoryName);
 }

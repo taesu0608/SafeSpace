@@ -1,0 +1,45 @@
+[{
+  "category": {
+    "id": "a",
+    "categoryName": "movie"
+  },
+  "provider": {
+    "providerId": "a",
+    "name": "Netflix",
+    "imgPath": "/img/product_logo/netflex.png"
+  }
+},
+  {
+    "category": {
+      "id": "c",
+      "categoryName": "music"
+    },
+    "provider": {
+      "providerId": "b",
+      "name": "Genie",
+      "imgPath": "/img/product_logo/genie.png"
+    }
+  },
+  {
+    "category": {
+      "id": "b",
+      "categoryName": "book"
+    },
+    "provider": {
+      "providerId": "c",
+      "name": "Millie",
+      "imgPath": "/img/product_logo/millie.png"
+    }
+  },
+  {
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
+    "provider":  {
+      "providerId": "d",
+      "name": "Watcha",
+      "imgPath": "/img/product_logo/watcha.png"
+    }
+  }
+]

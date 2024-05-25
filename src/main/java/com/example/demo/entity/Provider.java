@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -27,13 +28,18 @@ public class Provider {
     private List<Product> productList;
 
     @OneToMany(mappedBy = "provider", cascade = CascadeType.ALL)
-    private List<SubscribeInformation> subscribeInformation;
+    private List<SubscribeInformation> subscribeInformationList;
+
+    @OneToMany(mappedBy = "provider", cascade = CascadeType.ALL)
+    private List<ProviderCategory> providerCategoryList;
 
     @Builder
     public Provider(String providerId, String name, String imgPath) {
         this.providerId = providerId;
         this.name = name;
         this.imgPath=imgPath;
+        providerCategoryList = new ArrayList<>();
+        subscribeInformationList = new ArrayList<>();
     }
 
     public static Provider toEntity(ProviderDto dto){

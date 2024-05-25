@@ -23,9 +23,6 @@ public class Product {
     @Column(length = 255)
     private String imgPath;
 
-    @Column(length = 100)
-    private String category;
-
     @Column(length = 255)
     private String description;
 
@@ -41,11 +38,14 @@ public class Product {
     @ManyToOne
     private Provider provider;
 
+    @ManyToOne
+    private Category category;
+
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<SubscribeInformation> subscribeInformation;
 
     @Builder
-    public Product(String product_id,String product_name, String imgPath, String category, String description, Integer capacity, Integer month, Integer price, Provider provider) {
+    public Product(String product_id,String product_name, String imgPath, Category category, String description, Integer capacity, Integer month, Integer price, Provider provider) {
         this.productId = product_id;
         this.productName = product_name;
         this.imgPath = imgPath;
@@ -62,7 +62,7 @@ public class Product {
                 .product_id(dto.getProductId())
                 .product_name(dto.getProductName())
                 .imgPath(dto.getImgPath())
-                .category(dto.getCategory())
+                .category(Category.toEntity(dto.getCategory()))
                 .description(dto.getDescription())
                 .capacity(dto.getCapacity())
                 .month(dto.getMonth())

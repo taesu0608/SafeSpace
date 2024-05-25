@@ -22,7 +22,7 @@ public class ProductController {
     private ProductService productService;
 
     //모든 Product 조회
-    @GetMapping("/get/")
+    @GetMapping("/find/")
     public List<ProductDto> getProduct() {
         ArrayList<ProductDto> dtos = new ArrayList<>();
         for (Product p : productService.getAllProduct()) {
@@ -32,7 +32,7 @@ public class ProductController {
     }
 
     //개별 Product 조회
-    @GetMapping("/get2/")
+    @GetMapping("/findAll/")
     public ProductDto getProductById(@RequestParam("productId") String productId) {
         return new ProductDto().toDTO(
                 productService.getProductById(productId)

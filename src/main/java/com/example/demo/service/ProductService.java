@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.dto.CategoryDto;
 import com.example.demo.dto.ProductDto;
 import com.example.demo.entity.Product;
 import com.example.demo.entity.Provider;
@@ -30,6 +31,7 @@ public class ProductService {
 
     @SneakyThrows//상위로 예외던짐
     public ArrayList<ProductDto> productInit() {
+        /*
         String str = "";
         String sb = "";
         ClassPathResource resource = null;
@@ -51,14 +53,20 @@ public class ProductService {
         ObjectMapper objectMapper = new ObjectMapper();
         
         //Json Object일 경우 사용
-        /*ProductDto product = objectMapper.readValue(sb, ProductDto.class);*/
+        /*ProductDto product = objectMapper.readValue(sb, ProductDto.class);
 
         //Json Array일 경우 사용
         ArrayList<ProductDto> products = objectMapper.readValue(sb,new TypeReference<ArrayList<ProductDto>>(){});
+        */
 
-        return products;
+        //String(json)을 Object로 변환
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        //Json Array일 경우 사용
+        ArrayList dtos = objectMapper.readValue(InitService.resourceJsonToString("product.json"),new TypeReference<ArrayList<ProductDto>>(){});
+        return dtos;
     }
-    
+
     //개별 상품 저장
     public void saveProduct(Product product) {productRepo.save(product);}
     

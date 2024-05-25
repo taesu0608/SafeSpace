@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+import com.example.demo.entity.Category;
 import com.example.demo.entity.Product;
 import lombok.*;
 
@@ -14,7 +15,7 @@ public class ProductDto {
     private String productName;
     private String providerId;
     private String imgPath;
-    private String category;
+    private CategoryDto category; //TODO : 확인 필요
     private String description;
     private Integer capacity;
     private Integer month;
@@ -25,7 +26,7 @@ public class ProductDto {
                 .productId(entity.getProductId())
                 .productName(entity.getProductName())
                 .imgPath(entity.getImgPath())
-                .category(entity.getCategory())
+                .category(CategoryDto.toDto(entity.getCategory()))
                 .description(entity.getDescription())
                 .capacity(entity.getCapacity())
                 .month(entity.getMonth())

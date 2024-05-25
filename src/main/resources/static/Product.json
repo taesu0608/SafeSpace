@@ -3,7 +3,10 @@
     "productId": "1",
     "productName": "50people",
     "imgPath": "/img/product_logo/netflex.png",
-    "category": "Movie",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -14,7 +17,10 @@
     "productId": "2",
     "productName": "100people",
     "imgPath": "/img/product_logo/netflex.png",
-    "category": "Movie",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -25,7 +31,10 @@
     "productId": "3",
     "productName": "150people",
     "imgPath": "/img/product_logo/netflex.png",
-    "category": "Movie",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -36,7 +45,10 @@
     "productId": "4",
     "productName": "50people",
     "imgPath": "/img/product_logo/millie.png",
-    "category": "Book",
+    "category":  {
+      "id": "b",
+      "categoryName": "book"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -47,7 +59,10 @@
     "productId": "5",
     "productName": "100people",
     "imgPath": "/img/product_logo/millie.png",
-    "category": "Book",
+    "category":  {
+      "id": "b",
+      "categoryName": "book"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -58,7 +73,10 @@
     "productId": "6",
     "productName": "150people",
     "imgPath": "/img/product_logo/millie.png",
-    "category": "Book",
+    "category":  {
+      "id": "b",
+      "categoryName": "book"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -69,7 +87,10 @@
     "productId": "7",
     "productName": "50people",
     "imgPath": "/img/product_logo/genie.png",
-    "category": "Music",
+    "category": {
+      "id": "c",
+      "categoryName": "music"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -80,7 +101,10 @@
     "productId": "8",
     "productName": "100people",
     "imgPath": "/img/product_logo/genie.png",
-    "category": "Music",
+    "category": {
+      "id": "c",
+      "categoryName": "music"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -91,7 +115,10 @@
     "productId": "9",
     "productName": "150people",
     "imgPath": "/img/product_logo/genie.png",
-    "category": "Music",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -102,7 +129,10 @@
     "productId": "10",
     "productName": "50people",
     "imgPath": "/img/product_logo/watcha.png",
-    "category": "Movie",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -113,7 +143,10 @@
     "productId": "11",
     "productName": "100people",
     "imgPath": "/img/product_logo/watcha.png",
-    "category": "Movie",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
@@ -124,7 +157,10 @@
     "productId": "12",
     "productName": "150people",
     "imgPath": "/img/product_logo/watcha.png",
-    "category": "Movie",
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,

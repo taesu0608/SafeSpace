@@ -10,7 +10,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProviderDto {
-
     private String providerId;
     private String name;
     private String imgPath;
