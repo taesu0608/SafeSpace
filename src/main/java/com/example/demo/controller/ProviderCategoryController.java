@@ -17,7 +17,7 @@ import java.util.List;
 public class ProviderCategoryController {
     private final ProviderCategoryService providerCategoryService;
 
-    //모든 Product 조회
+    //모든 Product카테고리 조회
     @GetMapping("/findAll/")
     public List<ProviderCategoryDto> findAll() {
         ArrayList<ProviderCategory> list = (ArrayList<ProviderCategory>) providerCategoryService.getAllProviderCategory();

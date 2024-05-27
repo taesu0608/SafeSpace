@@ -2,7 +2,9 @@ package com.example.demo.controller;
 
 import com.example.demo.dto.ProductDto;
 import com.example.demo.entity.Product;
+import com.example.demo.entity.Provider;
 import com.example.demo.service.ProductService;
+import com.example.demo.service.ProviderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,11 +18,9 @@ import java.util.List;
 @RestController //JSON 형태로 반환하는 컨트롤러
 @RequestMapping("/product")
 @RequiredArgsConstructor
-public class ProductController {
+public class  ProductController {
     private final ProductService productService;
-
-    //TODO : providerId 조회 추가
-
+    private final ProviderService providerService;
 
     //모든 Product 조회
     @GetMapping("/findAll/")
@@ -38,5 +38,17 @@ public class ProductController {
         return new ProductDto().toDTO(
                 productService.getProductById(productId)
         );
+    }
+
+    //ProviderId로 product 조회
+    @GetMapping("/findProvider/")
+    public List<ProductDto> getProductByProviderId(@RequestParam("providerId") String providerId){
+        Provider provider = providerService.getProviderById(providerId);
+
+        ArrayList<ProductDto> dtos = new ArrayList<>();
+        for(Product p : productService.getProductByProvider(provider)){
+            dtos.add(ProductDto.toDTO(p));
+        }
+        return dtos;
     }
 }

@@ -37,5 +37,13 @@ public class SubscribeInformationService {
         subscribeInformationRepo.save(subscribeInformation);
     }
 
+    //구독 시작일
+    //구독 종료일
+    public void saveSubscriveInformationDate(Integer id) {
+        InitService.ServerTime();
+    }
 
+
+    //결제 시작일
+    //결제 종료일
 }

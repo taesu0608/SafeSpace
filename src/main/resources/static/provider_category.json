@@ -6,7 +6,7 @@
   "provider": {
     "providerId": "a",
     "name": "Netflix",
-    "imgPath": "img/product_logo/netflex.png"
+    "imgPath": "img/product_logo/netflix.png"
   }
 },
   {
@@ -40,6 +40,39 @@
       "providerId": "d",
       "name": "Watcha",
       "imgPath": "img/product_logo/watcha.png"
+    }
+  },
+  {
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
+    "provider":  {
+      "providerId": "d",
+      "name": "Watcha",
+      "imgPath": "img/product_logo/watcha.png"
+    }
+  },
+  {
+    "category": {
+      "id": "a",
+      "categoryName": "movie"
+    },
+    "provider":  {
+      "providerId": "e",
+      "name": "Movify",
+      "imgPath": "img/product_logo/movify.png"
+    }
+  },
+  {
+    "category": {
+      "id": "b",
+      "categoryName": "book"
+    },
+    "provider":  {
+      "providerId": "e",
+      "name": "Readify",
+      "imgPath": "img/product_logo/readify.png"
     }
   }
 ]
