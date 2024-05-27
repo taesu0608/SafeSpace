@@ -4,6 +4,7 @@ import com.example.demo.dto.SubscribeInformationDto;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 
@@ -23,12 +24,16 @@ public class SubscribeInformation {
     @Column(length = 255)
     private String name;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate endDate;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate nextPaymentDate;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate paymentDate;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate startDate;
 
     @Builder

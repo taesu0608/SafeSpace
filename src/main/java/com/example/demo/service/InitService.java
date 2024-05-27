@@ -4,20 +4,12 @@ import com.example.demo.dto.CategoryDto;
 import com.example.demo.dto.ProductDto;
 import com.example.demo.dto.ProviderCategoryDto;
 import com.example.demo.dto.ProviderDto;
-import com.example.demo.entity.Category;
-import com.example.demo.entity.Product;
-import com.example.demo.entity.Provider;
-import com.example.demo.entity.ProviderCategory;
-import com.example.demo.repository.CategoryRepo;
-import com.example.demo.repository.ProductRepo;
-import com.example.demo.repository.ProviderCategoryRepo;
-import com.example.demo.repository.ProviderRepo;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.demo.entity.*;
+import com.example.demo.repository.*;
+
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
@@ -25,6 +17,8 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 @Slf4j
@@ -36,14 +30,19 @@ public class InitService implements CommandLineRunner {
     private final ProviderService providerService;
     private final CategoryService categoryService;
     private final ProviderCategoryService providerCategoryService;
+    private final WorkplaceInformationService workplaceInformationService;
+    private final SubscribeInformationService subscribeInformationService;
     private final ProductRepo productRepo;
     private final ProviderRepo providerRepo;
     private final CategoryRepo categoryRepo;
     private final ProviderCategoryRepo providerCategoryRepo;
+    private final WorkplaceInformationRepo workplaceInformationRepo;
 
     @Override
     public void run(String... args) throws Exception {
         InitDB();
+        log.info("memberService1 = " + productRepo);
+
     }
 
     public void InitDB() {
@@ -100,9 +99,14 @@ public class InitService implements CommandLineRunner {
         }
 
         return sb;
-
     }
-    /* JSON(Object, Array) -> Object 변환 로직
+    
+    //서버 시간 반환
+    public static LocalDateTime ServerTime(){
+        return LocalDateTime.now();
+    }
+}
+/* JSON(Object, Array) -> Object 변환 로직
         String str = "";
         String sb = "";
         ClassPathResource resource = null;
@@ -122,11 +126,10 @@ public class InitService implements CommandLineRunner {
 
         //String(json)을 Object로 변환
         ObjectMapper objectMapper = new ObjectMapper();
-        
+
         //Json Object일 경우 사용
         /*ProductDto product = objectMapper.readValue(sb, ProductDto.class);
 
         //Json Array일 경우 사용
         ArrayList<ProductDto> products = objectMapper.readValue(sb,new TypeReference<ArrayList<ProductDto>>(){});
         */
-}
