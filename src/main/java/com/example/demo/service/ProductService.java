@@ -58,10 +58,16 @@ public class ProductService {
     //개별 상품 조회
     public Product getProductById(String productId) {
         Optional<Product> product =  productRepo.findById(productId);
-        if(product.isPresent()) {
+        if(product.isPresent())
+        {
             return product.get();
         }else
             return null;
+    }
+
+    //providerId로 product 조회
+    public List<Product> getProductByProvider(Provider provider){
+        return productRepo.findByProvider(provider);
     }
 }
 
