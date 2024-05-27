@@ -16,7 +16,7 @@ import java.util.List;
 @RestController //JSON 형태로 반환하는 컨트롤러
 @RequestMapping("/product")
 @RequiredArgsConstructor
-public class ProductController {
+public class  ProductController {
     @Autowired
     private ProductService productService;
 
