@@ -18,8 +18,6 @@ import java.util.List;
 @RequestMapping("/provider")
 @RequiredArgsConstructor
 public class ProviderController {
-
-    @Autowired
     ProviderService providerService;
 
     //모든 Provider 조회

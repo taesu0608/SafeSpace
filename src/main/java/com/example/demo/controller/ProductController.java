@@ -17,10 +17,10 @@ import java.util.List;
 @RequestMapping("/product")
 @RequiredArgsConstructor
 public class ProductController {
-    @Autowired
-    private ProductService productService;
+    private final ProductService productService;
 
     //TODO : providerId 조회 추가
+
 
     //모든 Product 조회
     @GetMapping("/findAll/")
