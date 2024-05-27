@@ -32,16 +32,4 @@ public class ProviderController {
         }
         return dtos;
     }
-
-
-    //카테고리별 Providre 조회
-    //TODO: 카테고리 조회
-    @GetMapping("/findCategory/")
-    public List<ProviderDto> getProvider2(){
-        ArrayList<ProviderDto> dtos = new ArrayList<>() ;
-        for (Provider p : providerService.getAllProviders()) {
-            dtos.add(new ProviderDto().toDTO(p));
-        }
-    return dtos;
-    }
 }
