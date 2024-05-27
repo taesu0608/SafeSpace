@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import com.example.demo.dto.WorkplaceInformationDto;
+import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
@@ -40,6 +41,7 @@ public class WorkplaceInformation {
     @Column(length = 255)
     private String workspacePhone;
 
+    @Nullable //Todo: 예시로 삽입한 것 Nullable 삭제해야함
     private LocalDate joinDate;
 
     @Builder
@@ -56,7 +58,6 @@ public class WorkplaceInformation {
         this.joinDate = LocalDate.now();
         this.registerIps = new ArrayList<>();
         this.subscribeInformations = new ArrayList<>();
-
     }
 
     @OneToMany(mappedBy = "workplaceInformation", cascade = CascadeType.REMOVE)

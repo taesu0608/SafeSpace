@@ -6,7 +6,10 @@ import com.example.demo.entity.Provider;
 import com.example.demo.dto.ProviderDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,15 +38,4 @@ public class ProviderController {
         }
         return dtos;
     }
-
-//    //카테고리별 Providre 조회
-//    //TODO: 카테고리 조회
-//    @GetMapping("/findCategory/")
-//    public List<ProviderDto> getProvider2(){
-//        ArrayList<ProviderDto> dtos = new ArrayList<>() ;
-//        for (Provider p : providerService.getAllProviders()) {
-//            dtos.add(new ProviderDto().toDTO(p));
-//        }
-//    return dtos;
-//    }
 }

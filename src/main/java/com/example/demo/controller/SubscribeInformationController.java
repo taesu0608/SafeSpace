@@ -5,13 +5,11 @@ import com.example.demo.entity.Product;
 import com.example.demo.entity.Provider;
 import com.example.demo.entity.SubscribeInformation;
 import com.example.demo.entity.WorkplaceInformation;
-import com.example.demo.service.ProductService;
-import com.example.demo.service.ProviderService;
-import com.example.demo.service.SubscribeInformationService;
-import com.example.demo.service.WorkplaceInformationService;
+import com.example.demo.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,20 +33,30 @@ public class SubscribeInformationController {
     @PostMapping("/add/")
     public Boolean addSubscribeInformation(@RequestParam("uid") String uid,
                                            @RequestParam("productId") String productId) {
+        
         Product product = productService.getProductById(productId);
         Provider provider = product.getProvider();
         WorkplaceInformation workplaceInformation = workplaceInformationService.getWorkplaceInformation(uid);
-        SubscribeInformation subscribeInformation = new SubscribeInformation(uid, null, null, null,
-                null, null, workplaceInformation, product, provider);
 
+        if(!workplaceInformationService.exsitWorkplaceInformation(uid)) return false; //회원이 아닐 경우 false
+        // end = 현재 서버시간 + 상품 month
+        LocalDate now = InitService.ServerTime().toLocalDate();
+        LocalDate end = now.plusMonths(product.getMonth());
+        
+        //TODO: 구독일과 결제일을 다르게
         subscribeInformationService.saveSubscribeInformation(
-                SubscribeInformation.toEntity(
-                        new SubscribeInformationDto().toDTO(subscribeInformation),
-                        provider,
-                        product
-                )
-        );
-
+                SubscribeInformation.builder().uid(uid)
+                    .uid(uid)
+                    .name(workplaceInformation.getWorkspaceName().toString() + product.getProductName().toString())
+                    .startDate(now)
+                    .endDate(end)
+                    .paymentDate(now)
+                    .workplaceInformation(workplaceInformation)
+                    .nextPaymentDate(end)
+                    .product(product)
+                    .provider(provider)
+                    .build()
+                );
         return true;
     }
 
@@ -67,7 +75,7 @@ public class SubscribeInformationController {
                 = (ArrayList<SubscribeInformation>) subscribeInformationService.getSubscribeInformationByUid(uid);
 
         ArrayList<SubscribeInformationDto> dtos = new ArrayList<>();
-        for(SubscribeInformation subscribeInformation : subscribeInformations) {
+        for (SubscribeInformation subscribeInformation : subscribeInformations) {
             dtos.add(new SubscribeInformationDto().toDTO(subscribeInformation));
         }
 

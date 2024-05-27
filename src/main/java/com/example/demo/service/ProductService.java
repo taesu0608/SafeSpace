@@ -9,6 +9,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,7 @@ import java.lang.*;
 import java.io.InputStreamReader;
 import java.util.Optional;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class ProductService {
@@ -31,34 +33,7 @@ public class ProductService {
 
     @SneakyThrows//상위로 예외던짐
     public ArrayList<ProductDto> productInit() {
-        /*
-        String str = "";
-        String sb = "";
-        ClassPathResource resource = null;
-        InputStreamReader reader = null;
-
-        //static폴더의 json파일을 string으로 저장
-        try {
-            resource = new ClassPathResource("static/product.json");
-            reader = new InputStreamReader(resource.getInputStream(), "UTF-8");
-            BufferedReader br = new BufferedReader(reader);
-            while ((str = br.readLine()) != null) {
-                sb += str + "\n";
-            }
-        } catch (IOException e) {
-            System.out.println(e);
-        }
-
-        //String(json)을 Object로 변환
-        ObjectMapper objectMapper = new ObjectMapper();
-        
-        //Json Object일 경우 사용
-        /*ProductDto product = objectMapper.readValue(sb, ProductDto.class);
-
-        //Json Array일 경우 사용
-        ArrayList<ProductDto> products = objectMapper.readValue(sb,new TypeReference<ArrayList<ProductDto>>(){});
-        */
-
+        log.info("memberService1 = " + productRepo);
         //String(json)을 Object로 변환
         ObjectMapper objectMapper = new ObjectMapper();
 
