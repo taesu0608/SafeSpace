@@ -21,9 +21,6 @@ public class SubscribeInformation {
     @Column(length = 255)
     private String uid;
 
-    @Column(length = 255)
-    private String name;
-
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate endDate;
 
@@ -44,7 +41,6 @@ public class SubscribeInformation {
                                 Product product,
                                 Provider provider){
         this.uid = uid;
-        this.name = name;
         this.endDate = endDate;
         this.nextPaymentDate = nextPaymentDate;
         this.paymentDate = paymentDate;
@@ -63,10 +59,10 @@ public class SubscribeInformation {
     @ManyToOne
     private Product product;
 
+
     public static SubscribeInformation toEntity(SubscribeInformationDto dto, Provider provider, Product product){
         return SubscribeInformation.builder()
                 .uid(dto.getUid())
-                .name(dto.getName())
                 .endDate(dto.getEndDate())
                 .nextPaymentDate(dto.getNextPaymentDate())
                 .paymentDate(dto.getPaymentDate())

@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+import com.example.demo.entity.Product;
 import com.example.demo.entity.SubscribeInformation;
 import lombok.*;
 
@@ -13,9 +14,8 @@ import java.time.LocalDate;
 public class SubscribeInformationDto {
     private Integer id;
     private String uid;
-    private String name;
-    private String providerId;
-    private String productId;
+    private ProviderDto provider;
+    private ProductDto product;
     private LocalDate endDate;
     private LocalDate nextPaymentDate;
     private LocalDate paymentDate;
@@ -26,9 +26,8 @@ public class SubscribeInformationDto {
         return SubscribeInformationDto.builder()
                 .id(entity.getId())
                 .uid(entity.getUid())
-                .name(entity.getName())
-                .providerId(entity.getProvider().getProviderId())
-                .productId(entity.getProduct().getProductId())
+                .provider(ProviderDto.toDTO(entity.getProvider()))
+                .product(ProductDto.toDTO(entity.getProduct()))
                 .endDate(entity.getEndDate())
                 .nextPaymentDate(entity.getNextPaymentDate())
                 .paymentDate(entity.getPaymentDate())

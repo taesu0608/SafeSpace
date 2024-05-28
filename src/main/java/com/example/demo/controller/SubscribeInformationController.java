@@ -47,7 +47,6 @@ public class SubscribeInformationController {
         subscribeInformationService.saveSubscribeInformation(
                 SubscribeInformation.builder().uid(uid)
                     .uid(uid)
-                    .name(workplaceInformation.getWorkspaceName().toString() + product.getProductName().toString())
                     .startDate(now)
                     .endDate(end)
                     .paymentDate(now)

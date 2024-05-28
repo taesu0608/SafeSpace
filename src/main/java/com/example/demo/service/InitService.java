@@ -40,7 +40,7 @@ public class InitService implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        InitDB();
+        if(productRepo.count() == 0) InitDB(); //중복 방지
         log.info("memberService1 = " + productRepo);
 
     }

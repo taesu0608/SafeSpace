@@ -48,17 +48,6 @@
       "categoryName": "movie"
     },
     "provider":  {
-      "providerId": "d",
-      "name": "Watcha",
-      "imgPath": "img/product_logo/watcha.png"
-    }
-  },
-  {
-    "category": {
-      "id": "a",
-      "categoryName": "movie"
-    },
-    "provider":  {
       "providerId": "e",
       "name": "Movify",
       "imgPath": "img/product_logo/movify.png"
@@ -70,7 +59,7 @@
       "categoryName": "book"
     },
     "provider":  {
-      "providerId": "e",
+      "providerId": "f",
       "name": "Readify",
       "imgPath": "img/product_logo/readify.png"
     }
