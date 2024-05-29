@@ -12,4 +12,8 @@ public class ListResult<T> extends CommonResult{
     // CommonResult를 통해 API 요청결과도 같이 출력
 
     private List<T> list;
+
+    ListResult(boolean success, int code, String msg) {
+        super(success, code, msg);
+    }
 }

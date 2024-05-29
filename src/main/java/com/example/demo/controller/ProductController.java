@@ -27,7 +27,7 @@ public class  ProductController {
     public List<ProductDto> getProduct() {
         ArrayList<ProductDto> dtos = new ArrayList<>();
         for (Product p : productService.getAllProduct()) {
-            dtos.add(new ProductDto().toDTO(p));
+            dtos.add(ProductDto.toDTO(p));
         }
         return dtos;
     }
@@ -35,7 +35,7 @@ public class  ProductController {
     //개별 Product 조회
     @GetMapping("/find/")
     public ProductDto getProductById(@RequestParam("productId") String productId) {
-        return new ProductDto().toDTO(
+        return  ProductDto.toDTO(
                 productService.getProductById(productId)
         );
     }

@@ -10,7 +10,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
-    "price": 10,
+    "price": 100000,
     "providerId": "a"
   },
   {
@@ -24,7 +24,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 100,
     "month": 5,
-    "price": 20,
+    "price": 150000,
     "providerId": "a"
   },
   {
@@ -38,7 +38,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 150,
     "month": 5,
-    "price": 30,
+    "price": 300000,
     "providerId": "a"
   },
   {
@@ -52,7 +52,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 200,
     "month": 5,
-    "price": 40,
+    "price": 400000,
     "providerId": "a"
   },
   {
@@ -66,7 +66,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 230,
     "month": 5,
-    "price": 45,
+    "price": 450000,
     "providerId": "a"
   },
   {
@@ -80,7 +80,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 260,
     "month": 5,
-    "price": 55,
+    "price": 550000,
     "providerId": "a"
   },
   {
@@ -94,7 +94,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 290,
     "month": 5,
-    "price": 60,
+    "price": 600000,
     "providerId": "a"
   },
   {
@@ -108,7 +108,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 320,
     "month": 5,
-    "price": 65,
+    "price": 650000,
     "providerId": "a"
   },
   {
@@ -122,7 +122,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
-    "price": 10,
+    "price": 100000,
     "providerId": "c"
   },
   {
@@ -136,7 +136,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 100,
     "month": 5,
-    "price": 20,
+    "price": 200000,
     "providerId": "c"
   },
   {
@@ -150,7 +150,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 150,
     "month": 5,
-    "price": 30,
+    "price": 300000,
     "providerId": "c"
   },
   {
@@ -164,7 +164,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 200,
     "month": 5,
-    "price": 40,
+    "price": 400000,
     "providerId": "c"
   },
   {
@@ -178,7 +178,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 230,
     "month": 5,
-    "price": 45,
+    "price": 450000,
     "providerId": "c"
   },
   {
@@ -192,7 +192,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 260,
     "month": 5,
-    "price": 55,
+    "price": 550000,
     "providerId": "c"
   },
   {
@@ -206,7 +206,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 290,
     "month": 5,
-    "price": 60,
+    "price": 600000,
     "providerId": "c"
   },
   {
@@ -220,7 +220,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 320,
     "month": 5,
-    "price": 65,
+    "price": 650000,
     "providerId": "c"
   },
   {
@@ -234,7 +234,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
-    "price": 10,
+    "price": 100000,
     "providerId": "b"
   },
   {
@@ -248,7 +248,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 100,
     "month": 5,
-    "price": 20,
+    "price": 200000,
     "providerId": "b"
   },
   {
@@ -262,7 +262,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 150,
     "month": 5,
-    "price": 30,
+    "price": 300000,
     "providerId": "b"
   },
   {
@@ -276,7 +276,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 200,
     "month": 5,
-    "price": 40,
+    "price": 400000,
     "providerId": "b"
   },
   {
@@ -290,7 +290,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 230,
     "month": 5,
-    "price": 45,
+    "price": 450000,
     "providerId": "b"
   },
   {
@@ -304,7 +304,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 260,
     "month": 5,
-    "price": 55,
+    "price": 550000,
     "providerId": "b"
   },
   {
@@ -318,7 +318,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 290,
     "month": 5,
-    "price": 60,
+    "price": 600000,
     "providerId": "b"
   },
   {
@@ -332,7 +332,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 320,
     "month": 5,
-    "price": 65,
+    "price": 650000,
     "providerId": "b"
   },
   {
@@ -346,7 +346,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
-    "price": 10,
+    "price": 100000,
     "providerId": "d"
   },
   {
@@ -360,7 +360,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 100,
     "month": 5,
-    "price": 20,
+    "price": 200000,
     "providerId": "d"
   },
   {
@@ -374,7 +374,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 150,
     "month": 5,
-    "price": 30,
+    "price": 300000,
     "providerId": "d"
   },
   {
@@ -388,7 +388,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 200,
     "month": 5,
-    "price": 40,
+    "price": 400000,
     "providerId": "d"
   },
   {
@@ -402,7 +402,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 230,
     "month": 5,
-    "price": 45,
+    "price": 450000,
     "providerId": "d"
   },
   {
@@ -416,7 +416,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 260,
     "month": 5,
-    "price": 55,
+    "price": 550000,
     "providerId": "d"
   },
   {
@@ -430,7 +430,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 290,
     "month": 5,
-    "price": 60,
+    "price": 600000,
     "providerId": "d"
   },
   {
@@ -444,7 +444,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 320,
     "month": 5,
-    "price": 65,
+    "price": 650000,
     "providerId": "d"
   },
   {
@@ -458,7 +458,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
-    "price": 10,
+    "price": 100000,
     "providerId": "e"
   },
   {
@@ -472,7 +472,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 100,
     "month": 5,
-    "price": 20,
+    "price": 200000,
     "providerId": "e"
   },
   {
@@ -486,7 +486,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 150,
     "month": 5,
-    "price": 30,
+    "price": 300000,
     "providerId": "e"
   },
   {
@@ -500,7 +500,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 200,
     "month": 5,
-    "price": 40,
+    "price": 400000,
     "providerId": "e"
   },
   {
@@ -514,7 +514,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 230,
     "month": 5,
-    "price": 45,
+    "price": 450000,
     "providerId": "e"
   },
   {
@@ -528,7 +528,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 260,
     "month": 5,
-    "price": 55,
+    "price": 550000,
     "providerId": "e"
   },
   {
@@ -542,7 +542,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 290,
     "month": 5,
-    "price": 60,
+    "price": 600000,
     "providerId": "e"
   },
   {
@@ -556,7 +556,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 320,
     "month": 5,
-    "price": 65,
+    "price": 650000,
     "providerId": "e"
   },
   {
@@ -570,7 +570,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 50,
     "month": 5,
-    "price": 10,
+    "price": 100000,
     "providerId": "f"
   },
   {
@@ -584,7 +584,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 100,
     "month": 5,
-    "price": 20,
+    "price": 200000,
     "providerId": "f"
   },
   {
@@ -598,7 +598,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 150,
     "month": 5,
-    "price": 30,
+    "price": 300000,
     "providerId": "f"
   },
   {
@@ -612,7 +612,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 200,
     "month": 5,
-    "price": 40,
+    "price": 400000,
     "providerId": "f"
   },
   {
@@ -626,7 +626,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 230,
     "month": 5,
-    "price": 45,
+    "price": 450000,
     "providerId": "f"
   },
   {
@@ -640,7 +640,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 260,
     "month": 5,
-    "price": 55,
+    "price": 550000,
     "providerId": "f"
   },
   {
@@ -654,7 +654,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 290,
     "month": 5,
-    "price": 60,
+    "price": 600000,
     "providerId": "f"
   },
   {
@@ -668,7 +668,7 @@
     "description": "High-quality widget with advanced features.",
     "capacity": 320,
     "month": 5,
-    "price": 65,
+    "price": 650000,
     "providerId": "f"
   }
 ]
