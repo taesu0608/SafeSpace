@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="fix: 잘못된 json 파일 수정, SubscribeInformation name 속성 삭제&#10;&#10;provider_category.json&#10;및 initDB가 한번 만 실행되도록 수정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/WorkplaceInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/WorkplaceInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/ListResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/ListResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/SingleResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/response/ListResult/SingleResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/Product.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/Product.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/taesu0608" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="taesu2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;taesu0608&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/taesu0608/TestServer.git&quot;,
+    &quot;accountId&quot;: &quot;48ac9d93-024d-444f-851f-0c126ca9dd97&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2euDPGl2Xc2nlC0FKr9AkRGncHv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Build TestServer.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build demo.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DemoApplicationTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DemoApplicationTest.testService.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestServer [bootJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.demo [:HelloLombok.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kjw&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KJW/Code/kotlinProgramming/rapid&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.demo" />
+      <recent name="com.example.demo.service" />
+      <recent name="com.example.demo.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="DemoApplicationTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.demo.DemoApplicationTest.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplicationTest.testService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.demo.DemoApplicationTest.testService&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestServer [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="DEBUG_MODE" value="true" />
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.DemoApplicationTest.test" />
+      <item itemvalue="Gradle.DemoApplicationTest.testService" />
+      <item itemvalue="Gradle.TestServer [bootJar]" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TestServer [bootJar]" />
+        <item itemvalue="Gradle.DemoApplicationTest.testService" />
+        <item itemvalue="Gradle.DemoApplicationTest.test" />
+        <item itemvalue="Gradle.DemoApplicationTest.testService" />
+        <item itemvalue="Gradle.DemoApplicationTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d669d1c8-87ab-4ca1-8f92-5036ae989fe2" name="Changes" comment="" />
+      <created>1712745545587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712745545587</updated>
+      <workItem from="1712745546651" duration="3720000" />
+      <workItem from="1712820983951" duration="276000" />
+      <workItem from="1712821284024" duration="95000" />
+      <workItem from="1712821404656" duration="668000" />
+      <workItem from="1712822097836" duration="917000" />
+      <workItem from="1712823710232" duration="3172000" />
+      <workItem from="1712900327683" duration="5443000" />
+      <workItem from="1713071996342" duration="7974000" />
+      <workItem from="1713083108392" duration="586000" />
+      <workItem from="1715311942751" duration="1905000" />
+      <workItem from="1715425537848" duration="24174000" />
+      <workItem from="1715607050065" duration="3390000" />
+      <workItem from="1715646225304" duration="8038000" />
+      <workItem from="1715676831560" duration="25000" />
+      <workItem from="1715680100670" duration="2707000" />
+      <workItem from="1715778210052" duration="1821000" />
+      <workItem from="1715823280078" duration="3574000" />
+      <workItem from="1715858610786" duration="2497000" />
+      <workItem from="1715871720055" duration="3579000" />
+      <workItem from="1715909056437" duration="9602000" />
+      <workItem from="1715997192080" duration="6957000" />
+      <workItem from="1716103597744" duration="425000" />
+      <workItem from="1716112635141" duration="7427000" />
+      <workItem from="1716172548010" duration="2111000" />
+      <workItem from="1716213625111" duration="12019000" />
+      <workItem from="1716283739186" duration="2100000" />
+      <workItem from="1716612892930" duration="2271000" />
+      <workItem from="1716631956148" duration="667000" />
+      <workItem from="1716698020055" duration="2487000" />
+      <workItem from="1716729776798" duration="6296000" />
+      <workItem from="1716782174058" duration="5592000" />
+      <workItem from="1716799682225" duration="2555000" />
+      <workItem from="1716807579645" duration="532000" />
+      <workItem from="1716868943933" duration="7247000" />
+      <workItem from="1716889390393" duration="493000" />
+      <workItem from="1716902477009" duration="12000000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat:&#10;1. SprintBoot 구조 구현">
+      <option name="closed" value="true" />
+      <created>1715573322756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715573322756</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat:&#10;1. builder()패턴 적용">
+      <option name="closed" value="true" />
+      <created>1715610447972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715610447972</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat:&#10;1. DB, JPA 의존성 추가&#10;2. DB 데이터 값 삽입">
+      <option name="closed" value="true" />
+      <created>1715661825080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715661825080</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: Entity Relation, Repository&#10;1. Entity 관계 형성 및 DB Table 생성 확인&#10;2. Repository 구현">
+      <option name="closed" value="true" />
+      <created>1715747147464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715747147464</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Entity 연결&#10;&#10;Entity 관계 연결">
+      <option name="closed" value="true" />
+      <created>1715849877491</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715849877492</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: DTO 설계&#10;&#10;맡은 DTO( RegisterIpDTO.java, SubscribeInformationDTO.java, WorkplaceInformationDTO.java, )를 설계">
+      <option name="closed" value="true" />
+      <created>1715911490444</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715911490444</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: DTO, Entity 수정&#10;Entity의 Product, Provider 등 외래키를 필요로 하는 객체를 DTO로 변환할 때 각 객체가 가지고 있는 id로 변경&#10;(추후 JSON 잘 작동되면 객체 자체를 보낼 예정) &#10;&#10;다시 DTO에서 Entity 변경할 때는 Service 단에서 객체를 조회해서 채워줄 예정&#10;&#10;feat : Workplace join Service 및 Controller 구현">
+      <option name="closed" value="true" />
+      <created>1716085988296</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716085988296</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat : Service, Controller&#10;&#10;맡은 Service 및 Controller 구현( RegisterIp, SubscribeInformation, workplaceInformation)">
+      <option name="closed" value="true" />
+      <created>1716114777441</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716114777441</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat : (Repo) Class명,변수명 변경">
+      <option name="closed" value="true" />
+      <created>1716187265315</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716187265315</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat : Product 더미데이터 Entity변환">
+      <option name="closed" value="true" />
+      <created>1716205556138</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716205556138</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: ProductDTO 변경, DTO/Entity 낙타표기법으로 변경&#10;feat: ProductInit메서드 구현">
+      <option name="closed" value="true" />
+      <created>1716283981357</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716283981357</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: category 방식 변경&#10;&#10;feat: json 추가">
+      <option name="closed" value="true" />
+      <created>1716611605183</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716611605184</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix: imgPath 경로 수정">
+      <option name="closed" value="true" />
+      <created>1716632819072</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716632819072</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix: 잘못된 json 파일 수정, SubscribeInformation name 속성 삭제&#10;&#10;provider_category.json&#10;및 initDB가 한번 만 실행되도록 수정">
+      <option name="closed" value="true" />
+      <created>1716875371398</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716875371398</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="kjw" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat:&#10;1. SprintBoot 구조 구현" />
+    <MESSAGE value="feat:&#10;1. builder()패턴 적용" />
+    <MESSAGE value="feat:&#10;1. DB, JPA 의존성 추가&#10;2. DB 데이터 값 삽입" />
+    <MESSAGE value="feat: Entity Relation, Repository&#10;1. Entity 관계 형성 및 DB Table 생성 확인&#10;2. Repository 구현" />
+    <MESSAGE value="feat: Entity 연결&#10;&#10;Entity 관계 연결" />
+    <MESSAGE value="feat: DTO 설계&#10;&#10;맡은 DTO( RegisterIpDTO.java, SubscribeInformationDTO.java, WorkplaceInformationDTO.java, )를 설계" />
+    <MESSAGE value="fix: DTO, Entity 수정&#10;Entity의 Product, Provider 등 외래키를 필요로 하는 객체를 DTO로 변환할 때 각 객체가 가지고 있는 id로 변경&#10;(추후 JSON 잘 작동되면 객체 자체를 보낼 예정) &#10;&#10;다시 DTO에서 Entity 변경할 때는 Service 단에서 객체를 조회해서 채워줄 예정&#10;&#10;feat : Workplace join Service 및 Controller 구현" />
+    <MESSAGE value="feat : Service, Controller&#10;&#10;맡은 Service 및 Controller 구현( RegisterIp, SubscribeInformation, workplaceInformation)" />
+    <MESSAGE value="fix: Repository명 Repo로 변경" />
+    <MESSAGE value="feat : (Repo) Class명,변수명 변경" />
+    <MESSAGE value="feat : Product 더미데이터 Entity변환" />
+    <MESSAGE value="fix: ProductDTO 변경, DTO/Entity 낙타표기법으로 변경&#10;feat: ProductInit메서드 구현" />
+    <MESSAGE value="fix: category 방식 변경&#10;&#10;feat: json 추가" />
+    <MESSAGE value="fix: imgPath 경로 수정" />
+    <MESSAGE value="fix: 잘못된 json 파일 수정, SubscribeInformation name 속성 삭제&#10;&#10;provider_category.json&#10;및 initDB가 한번 만 실행되도록 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 잘못된 json 파일 수정, SubscribeInformation name 속성 삭제&#10;&#10;provider_category.json&#10;및 initDB가 한번 만 실행되도록 수정" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/build/classes/java/main/com/example/demo/dto/TestDto.class</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/demo/dto/SubscribeInformationDto.java</url>
+          <line>15</line>
+          <properties field="uid" class="com.example.demo.dto.SubscribeInformationDto" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
