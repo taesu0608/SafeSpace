@@ -1,23 +1,10 @@
 package com.example.demo;
 
-import com.example.demo.dto.ProductDto;
-import com.example.demo.dto.ProviderDto;
-import com.example.demo.entity.Product;
-import com.example.demo.entity.Provider;
-import com.example.demo.repository.ProductRepo;
-import com.example.demo.repository.ProviderRepo;
-import com.example.demo.service.ProductService;
-import com.example.demo.service.ProviderService;
-import jakarta.annotation.PostConstruct;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
 
 //로그인 (security 배제)
 @RestController

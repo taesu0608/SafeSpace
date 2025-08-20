@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.TestE;
+import com.example.demo.test.entity.TestE;
 import com.example.demo.repository.TestRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

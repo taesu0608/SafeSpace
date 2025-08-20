@@ -1,12 +1,25 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.CategoryDto;
-import com.example.demo.dto.ProductDto;
-import com.example.demo.dto.ProviderCategoryDto;
-import com.example.demo.dto.ProviderDto;
-import com.example.demo.entity.*;
-import com.example.demo.repository.*;
+import com.example.demo.product.category.entity.Category;
+import com.example.demo.product.category.entity.ProviderCategory;
+import com.example.demo.product.category.repository.CategoryRepo;
+import com.example.demo.product.category.repository.ProviderCategoryRepo;
+import com.example.demo.product.category.service.CategoryService;
+import com.example.demo.product.category.dto.CategoryDto;
+import com.example.demo.product.product.dto.ProductDto;
+import com.example.demo.product.category.dto.ProviderCategoryDto;
+import com.example.demo.provider.dto.ProviderDto;
+import com.example.demo.product.category.service.ProviderCategoryService;
+import com.example.demo.product.product.entity.Product;
+import com.example.demo.product.product.repository.ProductRepo;
+import com.example.demo.product.product.service.ProductService;
+import com.example.demo.provider.entity.Provider;
+import com.example.demo.provider.repository.ProviderRepo;
+import com.example.demo.provider.service.ProviderService;
 
+import com.example.demo.subscribe.service.SubscribeInformationService;
+import com.example.demo.workInformation.repository.WorkplaceInformationRepo;
+import com.example.demo.workInformation.service.WorkplaceInformationService;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +30,6 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
